@@ -24,4 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)loginButtonPressed:(UIButton *)sender {
+}
+- (IBAction)signupButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)forgotPasswordLinkPressed:(UIButton *)sender {
+}
 @end
