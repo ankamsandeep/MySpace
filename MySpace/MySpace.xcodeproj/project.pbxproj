@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14CCC1041AEF2E23005AE6E7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CCC1021AEF2E23005AE6E7 /* LoginViewController.m */; };
+		14CCC1051AEF2E23005AE6E7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CCC1031AEF2E23005AE6E7 /* LoginViewController.xib */; };
 		66FBF92B1AED3E6B00883DD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92A1AED3E6B00883DD2 /* main.m */; };
 		66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */; };
 		66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */; };
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14CCC1011AEF2E23005AE6E7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		14CCC1021AEF2E23005AE6E7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		14CCC1031AEF2E23005AE6E7 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		66FBF9251AED3E6B00883DD2 /* MySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FBF9291AED3E6B00883DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66FBF92A1AED3E6B00883DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +91,9 @@
 				66FBF92C1AED3E6B00883DD2 /* AppDelegate.h */,
 				66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */,
 				66FBF9321AED3E6B00883DD2 /* ViewController.h */,
+				14CCC1011AEF2E23005AE6E7 /* LoginViewController.h */,
+				14CCC1021AEF2E23005AE6E7 /* LoginViewController.m */,
+				14CCC1031AEF2E23005AE6E7 /* LoginViewController.xib */,
 				66FBF9331AED3E6B00883DD2 /* ViewController.m */,
 				66FBF9351AED3E6B00883DD2 /* Main.storyboard */,
 				66FBF9381AED3E6B00883DD2 /* Images.xcassets */,
@@ -205,6 +213,7 @@
 				66FBF9371AED3E6B00883DD2 /* Main.storyboard in Resources */,
 				66FBF93C1AED3E6B00883DD2 /* LaunchScreen.xib in Resources */,
 				66FBF9391AED3E6B00883DD2 /* Images.xcassets in Resources */,
+				14CCC1051AEF2E23005AE6E7 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14CCC1041AEF2E23005AE6E7 /* LoginViewController.m in Sources */,
 				66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */,
 				66FBF92B1AED3E6B00883DD2 /* main.m in Sources */,
 				66FBF9341AED3E6B00883DD2 /* ViewController.m in Sources */,
@@ -418,6 +428,7 @@
 				66FBF94D1AED3E6B00883DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66FBF94E1AED3E6B00883DD2 /* Build configuration list for PBXNativeTarget "MySpaceTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +437,7 @@
 				66FBF9501AED3E6B00883DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
