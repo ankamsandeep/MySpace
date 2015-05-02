@@ -7,7 +7,7 @@
 //
 
 #import "LoginInViewController.h"
-
+#import "RegistrationViewController.h"
 
 @implementation LoginInViewController
 
@@ -19,7 +19,7 @@
 
 - (IBAction)signUpButtonPressed:(id)sender {
     
-  
+    [self presentRegistrationViewController];
 }
 
 - (IBAction)forgotPasswordButtonPressed:(id)sender {
@@ -29,5 +29,11 @@
 
 #pragma mark - Private Actions
 
+- (void)presentRegistrationViewController {
+    
+    RegistrationViewController *controller = [[RegistrationViewController alloc] initWithNibName:@"RegistrationViewController" bundle:nil];
+    
+    [self presentViewController:controller animated:YES completion:nil];
+}
 
 @end
