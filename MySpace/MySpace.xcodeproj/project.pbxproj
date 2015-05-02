@@ -9,10 +9,24 @@
 /* Begin PBXBuildFile section */
 		668BF2E71AEF36F200268C16 /* LoginInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668BF2E61AEF36F200268C16 /* LoginInViewController.m */; };
 		668BF2E91AEF370F00268C16 /* LoginInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668BF2E81AEF370F00268C16 /* LoginInViewController.xib */; };
-		668F07461AF4795E004B38D6 /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07451AF4795E004B38D6 /* RegistrationController.xib */; };
+		668F07461AF4795E004B38D6 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07451AF4795E004B38D6 /* RegistrationViewController.xib */; };
 		668F07481AF47BC6004B38D6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07471AF47BC6004B38D6 /* HomeViewController.xib */; };
 		668F074A1AF47C08004B38D6 /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07491AF47C08004B38D6 /* NotificationsViewController.xib */; };
 		668F074C1AF47C1E004B38D6 /* SingoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */; };
+		668F078D1AF52532004B38D6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F078B1AF52532004B38D6 /* Bolts.framework */; };
+		668F078E1AF52532004B38D6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F078C1AF52532004B38D6 /* Parse.framework */; };
+		668F07901AF52593004B38D6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F078F1AF52593004B38D6 /* AudioToolbox.framework */; };
+		668F07921AF52599004B38D6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F07911AF52599004B38D6 /* CFNetwork.framework */; };
+		668F07941AF5259F004B38D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F07931AF5259F004B38D6 /* CoreGraphics.framework */; };
+		668F07961AF525A5004B38D6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F07951AF525A5004B38D6 /* CoreLocation.framework */; };
+		668F07981AF525AE004B38D6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F07971AF525AE004B38D6 /* MobileCoreServices.framework */; };
+		668F079A1AF525B7004B38D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F07991AF525B7004B38D6 /* QuartzCore.framework */; };
+		668F079C1AF525C1004B38D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F079B1AF525C1004B38D6 /* Security.framework */; };
+		668F079E1AF525C7004B38D6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F079D1AF525C7004B38D6 /* StoreKit.framework */; };
+		668F07A01AF525CF004B38D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F079F1AF525CF004B38D6 /* SystemConfiguration.framework */; };
+		668F07A21AF525D8004B38D6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F07A11AF525D8004B38D6 /* libz.dylib */; };
+		668F07A41AF525E4004B38D6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F07A31AF525E4004B38D6 /* libsqlite3.dylib */; };
+		668F07A81AF528F5004B38D6 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668F07A71AF528F5004B38D6 /* RegistrationViewController.m */; };
 		66FBF92B1AED3E6B00883DD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92A1AED3E6B00883DD2 /* main.m */; };
 		66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */; };
 		66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */; };
@@ -35,10 +49,25 @@
 		668BF2E51AEF36F200268C16 /* LoginInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInViewController.h; sourceTree = "<group>"; };
 		668BF2E61AEF36F200268C16 /* LoginInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInViewController.m; sourceTree = "<group>"; };
 		668BF2E81AEF370F00268C16 /* LoginInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginInViewController.xib; path = ../LoginInViewController.xib; sourceTree = "<group>"; };
-		668F07451AF4795E004B38D6 /* RegistrationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationController.xib; sourceTree = "<group>"; };
+		668F07451AF4795E004B38D6 /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		668F07471AF47BC6004B38D6 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		668F07491AF47C08004B38D6 /* NotificationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
 		668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingoutViewController.xib; sourceTree = "<group>"; };
+		668F078B1AF52532004B38D6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = MySpace/Bolts.framework; sourceTree = "<group>"; };
+		668F078C1AF52532004B38D6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = MySpace/Parse.framework; sourceTree = "<group>"; };
+		668F078F1AF52593004B38D6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		668F07911AF52599004B38D6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		668F07931AF5259F004B38D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		668F07951AF525A5004B38D6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		668F07971AF525AE004B38D6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		668F07991AF525B7004B38D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		668F079B1AF525C1004B38D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		668F079D1AF525C7004B38D6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		668F079F1AF525CF004B38D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		668F07A11AF525D8004B38D6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		668F07A31AF525E4004B38D6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		668F07A61AF528F5004B38D6 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		668F07A71AF528F5004B38D6 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
 		66FBF9251AED3E6B00883DD2 /* MySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FBF9291AED3E6B00883DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66FBF92A1AED3E6B00883DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,6 +86,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668F07A41AF525E4004B38D6 /* libsqlite3.dylib in Frameworks */,
+				668F07A21AF525D8004B38D6 /* libz.dylib in Frameworks */,
+				668F07A01AF525CF004B38D6 /* SystemConfiguration.framework in Frameworks */,
+				668F079E1AF525C7004B38D6 /* StoreKit.framework in Frameworks */,
+				668F079C1AF525C1004B38D6 /* Security.framework in Frameworks */,
+				668F079A1AF525B7004B38D6 /* QuartzCore.framework in Frameworks */,
+				668F07981AF525AE004B38D6 /* MobileCoreServices.framework in Frameworks */,
+				668F07961AF525A5004B38D6 /* CoreLocation.framework in Frameworks */,
+				668F07941AF5259F004B38D6 /* CoreGraphics.framework in Frameworks */,
+				668F07921AF52599004B38D6 /* CFNetwork.framework in Frameworks */,
+				668F07901AF52593004B38D6 /* AudioToolbox.framework in Frameworks */,
+				668F078E1AF52532004B38D6 /* Parse.framework in Frameworks */,
+				668F078D1AF52532004B38D6 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +112,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		668F07851AF49314004B38D6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				66FBF92C1AED3E6B00883DD2 /* AppDelegate.h */,
+				66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		668F07861AF49321004B38D6 /* ResourcesBundle */ = {
+			isa = PBXGroup;
+			children = (
+				668F078A1AF49377004B38D6 /* CoreDataModel */,
+				668F07891AF4936E004B38D6 /* Images */,
+				668F07881AF4935E004B38D6 /* Xibs */,
+			);
+			name = ResourcesBundle;
+			sourceTree = "<group>";
+		};
+		668F07871AF49336004B38D6 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				668BF2E51AEF36F200268C16 /* LoginInViewController.h */,
+				668BF2E61AEF36F200268C16 /* LoginInViewController.m */,
+				668F07A61AF528F5004B38D6 /* RegistrationViewController.h */,
+				668F07A71AF528F5004B38D6 /* RegistrationViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		668F07881AF4935E004B38D6 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				668BF2E81AEF370F00268C16 /* LoginInViewController.xib */,
+				668F07451AF4795E004B38D6 /* RegistrationViewController.xib */,
+				668F07471AF47BC6004B38D6 /* HomeViewController.xib */,
+				668F07491AF47C08004B38D6 /* NotificationsViewController.xib */,
+				668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */,
+				66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		668F07891AF4936E004B38D6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				66FBF9381AED3E6B00883DD2 /* Images.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		668F078A1AF49377004B38D6 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		668F07A51AF525F8004B38D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				668F078B1AF52532004B38D6 /* Bolts.framework */,
+				668F078C1AF52532004B38D6 /* Parse.framework */,
+				668F07A31AF525E4004B38D6 /* libsqlite3.dylib */,
+				668F07A11AF525D8004B38D6 /* libz.dylib */,
+				668F079F1AF525CF004B38D6 /* SystemConfiguration.framework */,
+				668F079D1AF525C7004B38D6 /* StoreKit.framework */,
+				668F079B1AF525C1004B38D6 /* Security.framework */,
+				668F07991AF525B7004B38D6 /* QuartzCore.framework */,
+				668F07971AF525AE004B38D6 /* MobileCoreServices.framework */,
+				668F07951AF525A5004B38D6 /* CoreLocation.framework */,
+				668F07931AF5259F004B38D6 /* CoreGraphics.framework */,
+				668F07911AF52599004B38D6 /* CFNetwork.framework */,
+				668F078F1AF52593004B38D6 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		66FBF91C1AED3E6B00883DD2 = {
 			isa = PBXGroup;
 			children = (
@@ -91,19 +213,11 @@
 		66FBF9271AED3E6B00883DD2 /* MySpace */ = {
 			isa = PBXGroup;
 			children = (
-				66FBF92C1AED3E6B00883DD2 /* AppDelegate.h */,
-				66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */,
-				66FBF9381AED3E6B00883DD2 /* Images.xcassets */,
-				66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */,
-				66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */,
+				668F07851AF49314004B38D6 /* AppDelegate */,
+				668F07A51AF525F8004B38D6 /* Frameworks */,
+				668F07861AF49321004B38D6 /* ResourcesBundle */,
 				66FBF9281AED3E6B00883DD2 /* Supporting Files */,
-				668BF2E51AEF36F200268C16 /* LoginInViewController.h */,
-				668BF2E61AEF36F200268C16 /* LoginInViewController.m */,
-				668BF2E81AEF370F00268C16 /* LoginInViewController.xib */,
-				668F07451AF4795E004B38D6 /* RegistrationController.xib */,
-				668F07471AF47BC6004B38D6 /* HomeViewController.xib */,
-				668F07491AF47C08004B38D6 /* NotificationsViewController.xib */,
-				668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */,
+				668F07871AF49336004B38D6 /* View Controller */,
 			);
 			path = MySpace;
 			sourceTree = "<group>";
@@ -219,7 +333,7 @@
 				66FBF93C1AED3E6B00883DD2 /* LaunchScreen.xib in Resources */,
 				668F07481AF47BC6004B38D6 /* HomeViewController.xib in Resources */,
 				668F074A1AF47C08004B38D6 /* NotificationsViewController.xib in Resources */,
-				668F07461AF4795E004B38D6 /* RegistrationController.xib in Resources */,
+				668F07461AF4795E004B38D6 /* RegistrationViewController.xib in Resources */,
 				66FBF9391AED3E6B00883DD2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +354,7 @@
 			files = (
 				66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */,
 				66FBF92B1AED3E6B00883DD2 /* main.m in Sources */,
+				668F07A81AF528F5004B38D6 /* RegistrationViewController.m in Sources */,
 				66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */,
 				668BF2E71AEF36F200268C16 /* LoginInViewController.m in Sources */,
 			);
@@ -357,6 +472,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MySpace",
+				);
 				INFOPLIST_FILE = MySpace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,6 +486,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MySpace",
+				);
 				INFOPLIST_FILE = MySpace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

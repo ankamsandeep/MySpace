@@ -4,7 +4,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController">
+            <connections>
+                <outlet property="emailTextbox" destination="eiY-UY-EFp" id="tr6-6t-38E"/>
+                <outlet property="firstNameTextbox" destination="gaf-ol-nqn" id="zJZ-up-exK"/>
+                <outlet property="lastNameTextbox" destination="LYw-4N-uXT" id="M1O-9M-NFh"/>
+                <outlet property="passwordTextbox" destination="ol9-cc-VQg" id="EFK-lq-eNk"/>
+                <outlet property="usernameTextbox" destination="By5-Gt-3YE" id="6UW-xx-eMx"/>
+                <outlet property="view" destination="iN0-l3-epB" id="3jx-bx-26n"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -82,6 +91,9 @@
                     <state key="normal" title="Register Now">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="registerNowPressed:" destination="-1" eventType="touchUpInside" id="7qE-bx-1Ew"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
