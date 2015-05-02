@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		0BFC923E1AEF2DBD00612AB8 /* Button Plain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC923D1AEF2DBD00612AB8 /* Button Plain.jpg */; };
 		0BFC92401AEF2EA100612AB8 /* LoginScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC923F1AEF2EA100612AB8 /* LoginScreen.xib */; };
+		0BFC92471AF4728F00612AB8 /* SettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC92461AF4728E00612AB8 /* SettingsController.xib */; };
+		0BFC924B1AF4767800612AB8 /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC924A1AF4767800612AB8 /* RegistrationController.xib */; };
+		0BFC924D1AF47ACE00612AB8 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC924C1AF47ACE00612AB8 /* HomeController.xib */; };
+		0BFC924F1AF47C1000612AB8 /* NotificationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC924E1AF47C1000612AB8 /* NotificationsController.xib */; };
 		66FBF92B1AED3E6B00883DD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92A1AED3E6B00883DD2 /* main.m */; };
 		66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */; };
 		66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */; };
 		66FBF9341AED3E6B00883DD2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF9331AED3E6B00883DD2 /* ViewController.m */; };
-		66FBF9371AED3E6B00883DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FBF9351AED3E6B00883DD2 /* Main.storyboard */; };
 		66FBF9391AED3E6B00883DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FBF9381AED3E6B00883DD2 /* Images.xcassets */; };
 		66FBF93C1AED3E6B00883DD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */; };
 		66FBF9481AED3E6B00883DD2 /* MySpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF9471AED3E6B00883DD2 /* MySpaceTests.m */; };
@@ -32,6 +35,10 @@
 /* Begin PBXFileReference section */
 		0BFC923D1AEF2DBD00612AB8 /* Button Plain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Button Plain.jpg"; path = "../../../Documents/Button Plain.jpg"; sourceTree = "<group>"; };
 		0BFC923F1AEF2EA100612AB8 /* LoginScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginScreen.xib; sourceTree = "<group>"; };
+		0BFC92461AF4728E00612AB8 /* SettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController.xib; sourceTree = "<group>"; };
+		0BFC924A1AF4767800612AB8 /* RegistrationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationController.xib; sourceTree = "<group>"; };
+		0BFC924C1AF47ACE00612AB8 /* HomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		0BFC924E1AF47C1000612AB8 /* NotificationsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsController.xib; sourceTree = "<group>"; };
 		66FBF9251AED3E6B00883DD2 /* MySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FBF9291AED3E6B00883DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66FBF92A1AED3E6B00883DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,7 +47,6 @@
 		66FBF9301AED3E6B00883DD2 /* MySpace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MySpace.xcdatamodel; sourceTree = "<group>"; };
 		66FBF9321AED3E6B00883DD2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		66FBF9331AED3E6B00883DD2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		66FBF9361AED3E6B00883DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66FBF9381AED3E6B00883DD2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		66FBF93B1AED3E6B00883DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		66FBF9411AED3E6B00883DD2 /* MySpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,12 +97,15 @@
 				66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */,
 				66FBF9321AED3E6B00883DD2 /* ViewController.h */,
 				66FBF9331AED3E6B00883DD2 /* ViewController.m */,
-				66FBF9351AED3E6B00883DD2 /* Main.storyboard */,
 				66FBF9381AED3E6B00883DD2 /* Images.xcassets */,
 				66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */,
-				0BFC923F1AEF2EA100612AB8 /* LoginScreen.xib */,
 				66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */,
 				0BFC923D1AEF2DBD00612AB8 /* Button Plain.jpg */,
+				0BFC923F1AEF2EA100612AB8 /* LoginScreen.xib */,
+				0BFC92461AF4728E00612AB8 /* SettingsController.xib */,
+				0BFC924A1AF4767800612AB8 /* RegistrationController.xib */,
+				0BFC924C1AF47ACE00612AB8 /* HomeController.xib */,
+				0BFC924E1AF47C1000612AB8 /* NotificationsController.xib */,
 				66FBF9281AED3E6B00883DD2 /* Supporting Files */,
 			);
 			path = MySpace;
@@ -208,10 +217,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66FBF9371AED3E6B00883DD2 /* Main.storyboard in Resources */,
 				66FBF93C1AED3E6B00883DD2 /* LaunchScreen.xib in Resources */,
 				0BFC92401AEF2EA100612AB8 /* LoginScreen.xib in Resources */,
+				0BFC924F1AF47C1000612AB8 /* NotificationsController.xib in Resources */,
+				0BFC924B1AF4767800612AB8 /* RegistrationController.xib in Resources */,
+				0BFC924D1AF47ACE00612AB8 /* HomeController.xib in Resources */,
 				66FBF9391AED3E6B00883DD2 /* Images.xcassets in Resources */,
+				0BFC92471AF4728F00612AB8 /* SettingsController.xib in Resources */,
 				0BFC923E1AEF2DBD00612AB8 /* Button Plain.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,14 +268,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		66FBF9351AED3E6B00883DD2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				66FBF9361AED3E6B00883DD2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
