@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -25,6 +26,12 @@
     [self.window setRootViewController:self.viewController];
     
     [self.window makeKeyAndVisible];
+    
+    //Parse Setup
+    
+    [Parse setApplicationId:@"bE0ti4scbHeo9rKhjZQx0f5CTziToM1c1x8LeTuh"
+                  clientKey:@"vTtWZ8kC3ue0TnBuixOuEfNbMMo0sRkFklxU0fYr"];
+    
     return YES;
 }
 

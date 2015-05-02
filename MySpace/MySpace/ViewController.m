@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RegitrationController.h"
 
 @interface ViewController ()
 
@@ -27,6 +28,12 @@
 - (IBAction)loginButtonPressed:(UIButton *)sender {
 }
 - (IBAction)signupButtonPressed:(UIButton *)sender {
+    
+
+   RegitrationController *regview = [[RegitrationController alloc] initWithNibName:@"RegistrationController" bundle:nil];
+   
+    [self presentViewController:regview animated:YES completion:nil];
+    
 }
 
 - (IBAction)forgotPasswordLinkPressed:(UIButton *)sender {
