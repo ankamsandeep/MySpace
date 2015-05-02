@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RegistrationViewController.h"
 
 @interface LoginInViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+
+@property(nonatomic,strong) RegistrationViewController *registrationController;
 
 - (IBAction)signInButtonPressed:(id)sender;
 - (IBAction)signUpButtonPressed:(id)sender;

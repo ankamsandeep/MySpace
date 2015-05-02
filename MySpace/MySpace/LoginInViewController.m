@@ -19,8 +19,14 @@
 
 - (IBAction)signUpButtonPressed:(id)sender {
     
-  
+    self.registrationController = [[RegistrationViewController alloc]initWithNibName:@"RegistrationViewController" bundle:nil];
+    [self presentViewController:self.registrationController animated:YES completion:^{
+        
+    }];
+    
+
 }
+
 
 - (IBAction)forgotPasswordButtonPressed:(id)sender {
     

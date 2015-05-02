@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegistrationViewController : UIViewController
+@interface RegistrationViewController : UIViewController<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextbox;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameTextbox;
