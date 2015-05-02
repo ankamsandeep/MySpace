@@ -13,6 +13,10 @@
 		0BFC924B1AF4767800612AB8 /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC924A1AF4767800612AB8 /* RegistrationController.xib */; };
 		0BFC924D1AF47ACE00612AB8 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC924C1AF47ACE00612AB8 /* HomeController.xib */; };
 		0BFC924F1AF47C1000612AB8 /* NotificationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC924E1AF47C1000612AB8 /* NotificationsController.xib */; };
+		0BFC92521AF486AD00612AB8 /* RegitrationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC92511AF486AD00612AB8 /* RegitrationController.m */; };
+		0BFC92551AF48DBC00612AB8 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC92541AF48DBC00612AB8 /* HomeController.m */; };
+		0BFC92581AF48E7500612AB8 /* NotificationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC92571AF48E7500612AB8 /* NotificationsController.m */; };
+		0BFC925B1AF48EFD00612AB8 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC925A1AF48EFD00612AB8 /* SettingsController.m */; };
 		66FBF92B1AED3E6B00883DD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92A1AED3E6B00883DD2 /* main.m */; };
 		66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */; };
 		66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */; };
@@ -39,6 +43,14 @@
 		0BFC924A1AF4767800612AB8 /* RegistrationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationController.xib; sourceTree = "<group>"; };
 		0BFC924C1AF47ACE00612AB8 /* HomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
 		0BFC924E1AF47C1000612AB8 /* NotificationsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsController.xib; sourceTree = "<group>"; };
+		0BFC92501AF486AD00612AB8 /* RegitrationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegitrationController.h; sourceTree = "<group>"; };
+		0BFC92511AF486AD00612AB8 /* RegitrationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegitrationController.m; sourceTree = "<group>"; };
+		0BFC92531AF48DBC00612AB8 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		0BFC92541AF48DBC00612AB8 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		0BFC92561AF48E7500612AB8 /* NotificationsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsController.h; sourceTree = "<group>"; };
+		0BFC92571AF48E7500612AB8 /* NotificationsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsController.m; sourceTree = "<group>"; };
+		0BFC92591AF48EFD00612AB8 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		0BFC925A1AF48EFD00612AB8 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		66FBF9251AED3E6B00883DD2 /* MySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FBF9291AED3E6B00883DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66FBF92A1AED3E6B00883DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,6 +119,14 @@
 				0BFC924C1AF47ACE00612AB8 /* HomeController.xib */,
 				0BFC924E1AF47C1000612AB8 /* NotificationsController.xib */,
 				66FBF9281AED3E6B00883DD2 /* Supporting Files */,
+				0BFC92501AF486AD00612AB8 /* RegitrationController.h */,
+				0BFC92511AF486AD00612AB8 /* RegitrationController.m */,
+				0BFC92531AF48DBC00612AB8 /* HomeController.h */,
+				0BFC92541AF48DBC00612AB8 /* HomeController.m */,
+				0BFC92561AF48E7500612AB8 /* NotificationsController.h */,
+				0BFC92571AF48E7500612AB8 /* NotificationsController.m */,
+				0BFC92591AF48EFD00612AB8 /* SettingsController.h */,
+				0BFC925A1AF48EFD00612AB8 /* SettingsController.m */,
 			);
 			path = MySpace;
 			sourceTree = "<group>";
@@ -243,8 +263,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */,
+				0BFC92521AF486AD00612AB8 /* RegitrationController.m in Sources */,
+				0BFC92581AF48E7500612AB8 /* NotificationsController.m in Sources */,
 				66FBF92B1AED3E6B00883DD2 /* main.m in Sources */,
+				0BFC925B1AF48EFD00612AB8 /* SettingsController.m in Sources */,
 				66FBF9341AED3E6B00883DD2 /* ViewController.m in Sources */,
+				0BFC92551AF48DBC00612AB8 /* HomeController.m in Sources */,
 				66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

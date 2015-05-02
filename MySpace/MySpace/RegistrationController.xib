@@ -4,7 +4,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegitrationController">
+            <connections>
+                <outlet property="RegistrationEmail" destination="mhf-QB-UMC" id="cgH-nK-BOT"/>
+                <outlet property="RegistrationFirstName" destination="smJ-Z1-fRV" id="DWC-dt-bfK"/>
+                <outlet property="RegistrationLastName" destination="02f-yW-4hB" id="Bke-6R-Qxh"/>
+                <outlet property="RegistrationPassword" destination="thg-92-43R" id="85e-HV-Wmv"/>
+                <outlet property="RegistrationUsername" destination="bEG-6U-6fh" id="v77-If-Cgx"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -46,13 +54,6 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biY-Ra-sa9">
-                    <rect key="frame" x="84" y="332" width="191" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <state key="normal" title="Register Now">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="smJ-Z1-fRV">
                     <rect key="frame" x="118" y="114" width="180" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -84,9 +85,20 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biY-Ra-sa9">
+                    <rect key="frame" x="107" y="328" width="191" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Register Now">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="RegistrationButton:" destination="-1" eventType="touchUpInside" id="wuE-9z-BDg"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.2113769707" green="0.95382318769999996" blue="0.67081639780000002" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="260" y="290"/>
         </view>
     </objects>
 </document>
