@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		668BF2E71AEF36F200268C16 /* LoginInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668BF2E61AEF36F200268C16 /* LoginInViewController.m */; };
 		668BF2E91AEF370F00268C16 /* LoginInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668BF2E81AEF370F00268C16 /* LoginInViewController.xib */; };
+		668F07461AF4795E004B38D6 /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07451AF4795E004B38D6 /* RegistrationController.xib */; };
+		668F07481AF47BC6004B38D6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07471AF47BC6004B38D6 /* HomeViewController.xib */; };
+		668F074A1AF47C08004B38D6 /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07491AF47C08004B38D6 /* NotificationsViewController.xib */; };
+		668F074C1AF47C1E004B38D6 /* SingoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */; };
 		66FBF92B1AED3E6B00883DD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92A1AED3E6B00883DD2 /* main.m */; };
 		66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */; };
 		66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */; };
@@ -31,6 +35,10 @@
 		668BF2E51AEF36F200268C16 /* LoginInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInViewController.h; sourceTree = "<group>"; };
 		668BF2E61AEF36F200268C16 /* LoginInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInViewController.m; sourceTree = "<group>"; };
 		668BF2E81AEF370F00268C16 /* LoginInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginInViewController.xib; path = ../LoginInViewController.xib; sourceTree = "<group>"; };
+		668F07451AF4795E004B38D6 /* RegistrationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationController.xib; sourceTree = "<group>"; };
+		668F07471AF47BC6004B38D6 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		668F07491AF47C08004B38D6 /* NotificationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
+		668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingoutViewController.xib; sourceTree = "<group>"; };
 		66FBF9251AED3E6B00883DD2 /* MySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FBF9291AED3E6B00883DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66FBF92A1AED3E6B00883DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +100,10 @@
 				668BF2E51AEF36F200268C16 /* LoginInViewController.h */,
 				668BF2E61AEF36F200268C16 /* LoginInViewController.m */,
 				668BF2E81AEF370F00268C16 /* LoginInViewController.xib */,
+				668F07451AF4795E004B38D6 /* RegistrationController.xib */,
+				668F07471AF47BC6004B38D6 /* HomeViewController.xib */,
+				668F07491AF47C08004B38D6 /* NotificationsViewController.xib */,
+				668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */,
 			);
 			path = MySpace;
 			sourceTree = "<group>";
@@ -203,7 +215,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				668BF2E91AEF370F00268C16 /* LoginInViewController.xib in Resources */,
+				668F074C1AF47C1E004B38D6 /* SingoutViewController.xib in Resources */,
 				66FBF93C1AED3E6B00883DD2 /* LaunchScreen.xib in Resources */,
+				668F07481AF47BC6004B38D6 /* HomeViewController.xib in Resources */,
+				668F074A1AF47C08004B38D6 /* NotificationsViewController.xib in Resources */,
+				668F07461AF4795E004B38D6 /* RegistrationController.xib in Resources */,
 				66FBF9391AED3E6B00883DD2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

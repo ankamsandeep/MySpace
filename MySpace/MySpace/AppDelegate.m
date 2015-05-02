@@ -21,6 +21,9 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.viewController = [[LoginInViewController alloc] initWithNibName:@"LoginInViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
     return YES;
