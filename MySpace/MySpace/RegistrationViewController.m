@@ -27,10 +27,6 @@
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Registration Successful!!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
             [alertView show];
             
-            // write code to show Home screen.
-            // .............
-            
-            // or code to force users to login screen
             [self dismissViewControllerAnimated:YES completion:nil];
             
         } else {

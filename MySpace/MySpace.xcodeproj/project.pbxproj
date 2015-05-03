@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		668654CB1AF67BC6008F2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668654CA1AF67BC6008F2CC2 /* HomeViewController.m */; };
+		668654CE1AF67BD1008F2CC2 /* NotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668654CD1AF67BD1008F2CC2 /* NotificationsViewController.m */; };
+		668654D11AF67BDC008F2CC2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668654D01AF67BDC008F2CC2 /* SettingsViewController.m */; };
 		668BF2E71AEF36F200268C16 /* LoginInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668BF2E61AEF36F200268C16 /* LoginInViewController.m */; };
 		668BF2E91AEF370F00268C16 /* LoginInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668BF2E81AEF370F00268C16 /* LoginInViewController.xib */; };
 		668F07461AF4795E004B38D6 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07451AF4795E004B38D6 /* RegistrationViewController.xib */; };
 		668F07481AF47BC6004B38D6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07471AF47BC6004B38D6 /* HomeViewController.xib */; };
 		668F074A1AF47C08004B38D6 /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07491AF47C08004B38D6 /* NotificationsViewController.xib */; };
-		668F074C1AF47C1E004B38D6 /* SingoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */; };
+		668F074C1AF47C1E004B38D6 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F074B1AF47C1E004B38D6 /* SettingsViewController.xib */; };
 		668F078D1AF52532004B38D6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F078B1AF52532004B38D6 /* Bolts.framework */; };
 		668F078E1AF52532004B38D6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F078C1AF52532004B38D6 /* Parse.framework */; };
 		668F07901AF52593004B38D6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668F078F1AF52593004B38D6 /* AudioToolbox.framework */; };
@@ -46,13 +49,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		668654C91AF67BC6008F2CC2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		668654CA1AF67BC6008F2CC2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		668654CC1AF67BD1008F2CC2 /* NotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsViewController.h; sourceTree = "<group>"; };
+		668654CD1AF67BD1008F2CC2 /* NotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsViewController.m; sourceTree = "<group>"; };
+		668654CF1AF67BDC008F2CC2 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		668654D01AF67BDC008F2CC2 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		668BF2E51AEF36F200268C16 /* LoginInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInViewController.h; sourceTree = "<group>"; };
 		668BF2E61AEF36F200268C16 /* LoginInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInViewController.m; sourceTree = "<group>"; };
 		668BF2E81AEF370F00268C16 /* LoginInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginInViewController.xib; path = ../LoginInViewController.xib; sourceTree = "<group>"; };
 		668F07451AF4795E004B38D6 /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		668F07471AF47BC6004B38D6 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		668F07491AF47C08004B38D6 /* NotificationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
-		668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingoutViewController.xib; sourceTree = "<group>"; };
+		668F074B1AF47C1E004B38D6 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		668F078B1AF52532004B38D6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = MySpace/Bolts.framework; sourceTree = "<group>"; };
 		668F078C1AF52532004B38D6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = MySpace/Parse.framework; sourceTree = "<group>"; };
 		668F078F1AF52593004B38D6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -138,6 +147,12 @@
 				668BF2E61AEF36F200268C16 /* LoginInViewController.m */,
 				668F07A61AF528F5004B38D6 /* RegistrationViewController.h */,
 				668F07A71AF528F5004B38D6 /* RegistrationViewController.m */,
+				668654C91AF67BC6008F2CC2 /* HomeViewController.h */,
+				668654CA1AF67BC6008F2CC2 /* HomeViewController.m */,
+				668654CC1AF67BD1008F2CC2 /* NotificationsViewController.h */,
+				668654CD1AF67BD1008F2CC2 /* NotificationsViewController.m */,
+				668654CF1AF67BDC008F2CC2 /* SettingsViewController.h */,
+				668654D01AF67BDC008F2CC2 /* SettingsViewController.m */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -149,7 +164,7 @@
 				668F07451AF4795E004B38D6 /* RegistrationViewController.xib */,
 				668F07471AF47BC6004B38D6 /* HomeViewController.xib */,
 				668F07491AF47C08004B38D6 /* NotificationsViewController.xib */,
-				668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */,
+				668F074B1AF47C1E004B38D6 /* SettingsViewController.xib */,
 				66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */,
 			);
 			name = Xibs;
@@ -329,7 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				668BF2E91AEF370F00268C16 /* LoginInViewController.xib in Resources */,
-				668F074C1AF47C1E004B38D6 /* SingoutViewController.xib in Resources */,
+				668F074C1AF47C1E004B38D6 /* SettingsViewController.xib in Resources */,
 				66FBF93C1AED3E6B00883DD2 /* LaunchScreen.xib in Resources */,
 				668F07481AF47BC6004B38D6 /* HomeViewController.xib in Resources */,
 				668F074A1AF47C08004B38D6 /* NotificationsViewController.xib in Resources */,
@@ -355,8 +370,11 @@
 				66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */,
 				66FBF92B1AED3E6B00883DD2 /* main.m in Sources */,
 				668F07A81AF528F5004B38D6 /* RegistrationViewController.m in Sources */,
+				668654D11AF67BDC008F2CC2 /* SettingsViewController.m in Sources */,
+				668654CE1AF67BD1008F2CC2 /* NotificationsViewController.m in Sources */,
 				66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */,
 				668BF2E71AEF36F200268C16 /* LoginInViewController.m in Sources */,
+				668654CB1AF67BC6008F2CC2 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
