@@ -52,6 +52,7 @@
             // Hooray! Let them use the app now.
             UIAlertView *SuccessAlert = [[UIAlertView alloc]initWithTitle:@"Registration Successfull" message:@"You are now Registered to MySpace" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [SuccessAlert show];
+            [self dismissViewControllerAnimated:YES completion:nil];
             
         } else {
             NSString *errorString = [error userInfo][@"error"];
