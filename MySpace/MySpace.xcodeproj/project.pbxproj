@@ -30,6 +30,7 @@
 		0BFC92711AF5261A00612AB8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFC92701AF5261A00612AB8 /* SystemConfiguration.framework */; };
 		0BFC92731AF5262900612AB8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFC92721AF5262900612AB8 /* libz.dylib */; };
 		0BFC92751AF5263700612AB8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFC92741AF5263700612AB8 /* libsqlite3.dylib */; };
+		0BFC92771AF80B2100612AB8 /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC92761AF80B2100612AB8 /* Status.png */; };
 		66FBF92B1AED3E6B00883DD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92A1AED3E6B00883DD2 /* main.m */; };
 		66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */; };
 		66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */; };
@@ -77,6 +78,7 @@
 		0BFC92701AF5261A00612AB8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0BFC92721AF5262900612AB8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		0BFC92741AF5263700612AB8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0BFC92761AF80B2100612AB8 /* Status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Status.png; path = ../../../Documents/Status.png; sourceTree = "<group>"; };
 		66FBF9251AED3E6B00883DD2 /* MySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FBF9291AED3E6B00883DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66FBF92A1AED3E6B00883DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				66FBF9321AED3E6B00883DD2 /* ViewController.h */,
 				66FBF9331AED3E6B00883DD2 /* ViewController.m */,
 				66FBF9381AED3E6B00883DD2 /* Images.xcassets */,
+				0BFC92761AF80B2100612AB8 /* Status.png */,
 				66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */,
 				66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */,
 				0BFC923D1AEF2DBD00612AB8 /* Button Plain.jpg */,
@@ -295,6 +298,7 @@
 				0BFC924B1AF4767800612AB8 /* RegistrationController.xib in Resources */,
 				0BFC924D1AF47ACE00612AB8 /* HomeController.xib in Resources */,
 				66FBF9391AED3E6B00883DD2 /* Images.xcassets in Resources */,
+				0BFC92771AF80B2100612AB8 /* Status.png in Resources */,
 				0BFC92471AF4728F00612AB8 /* SettingsController.xib in Resources */,
 				0BFC923E1AEF2DBD00612AB8 /* Button Plain.jpg in Resources */,
 			);

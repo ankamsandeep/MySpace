@@ -6,7 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeController">
             <connections>
-                <outlet property="HomePageTableView" destination="UTG-IM-6Xw" id="APg-LR-qwp"/>
                 <outlet property="view" destination="iN0-l3-epB" id="IHI-zZ-Lyb"/>
             </connections>
         </placeholder>
@@ -21,10 +20,6 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UTG-IM-6Xw">
-                    <rect key="frame" x="0.0" y="97" width="320" height="383"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
             </subviews>
             <color key="backgroundColor" red="0.2113769707" green="0.95382318769999996" blue="0.67081639780000002" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>

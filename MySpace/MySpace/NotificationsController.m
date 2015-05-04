@@ -24,6 +24,37 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)loadView
+{
+    UITableView *tableView = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] style:UITableViewStylePlain];
+    tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    tableView.frame = CGRectMake(10,30,320,400);
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    
+    [tableView reloadData];
+    
+    self.view = tableView;
+    
+}
+
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *) tableView {
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 6;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    NSString *titleString = [NSString stringWithFormat:@"Cell %d", indexPath.row+1];
+    cell.textLabel.text = titleString;
+    cell.imageView.image = [UIImage imageNamed:@"Status.png"];
+    return cell;
+}
 /*
 #pragma mark - Navigation
 

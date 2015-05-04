@@ -17,13 +17,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HA9-da-Pdz">
-                    <rect key="frame" x="50" y="124" width="99" height="21"/>
+                    <rect key="frame" x="23" y="124" width="99" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GII-rI-0pm">
-                    <rect key="frame" x="53" y="188" width="93" height="21"/>
+                    <rect key="frame" x="29" y="188" width="93" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -35,24 +35,15 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type User Name Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XkJ-GO-P5M">
-                    <rect key="frame" x="154" y="120" width="166" height="30"/>
+                    <rect key="frame" x="138" y="120" width="166" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Password here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J4c-hs-yKO">
-                    <rect key="frame" x="154" y="184" width="166" height="30"/>
+                    <rect key="frame" x="141" y="184" width="166" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opc-rT-paJ">
-                    <rect key="frame" x="169" y="222" width="110" height="46"/>
-                    <state key="normal" title="Login" backgroundImage="Button Plain.jpg">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="izW-wz-53b"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZ5-FI-B8e">
                     <rect key="frame" x="184" y="361" width="95" height="73"/>
                     <state key="normal" title="Signup" backgroundImage="Button Plain.jpg">
@@ -68,12 +59,6 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Space" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKX-Zl-D20">
-                    <rect key="frame" x="94" y="37" width="133" height="33"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHX-XR-cb3">
                     <rect key="frame" x="148" y="302" width="153" height="30"/>
                     <state key="normal" title="Forgot Password ?">
@@ -81,6 +66,21 @@
                     </state>
                     <connections>
                         <action selector="forgotPasswordLinkPressed:" destination="-1" eventType="touchUpInside" id="LZw-pl-hQ9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Space" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKX-Zl-D20">
+                    <rect key="frame" x="94" y="37" width="133" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opc-rT-paJ">
+                    <rect key="frame" x="166" y="222" width="110" height="46"/>
+                    <state key="normal" title="Login" backgroundImage="Button Plain.jpg">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="izW-wz-53b"/>
                     </connections>
                 </button>
             </subviews>

@@ -59,9 +59,7 @@
 }
 
 -(void) presentUserBoard{
-   // HomeController *myhomeview = [[HomeController alloc] initWithNibName:HomeController bundle:nil];
-    //UINavigationController *myhomenav = [[UINavigationController alloc] initWithNibName:myhomeview bundle:nil];
-    //
+
     HomeController *homeview = [[HomeController alloc] initWithNibName:@"HomeController" bundle:nil];
     homeview.title = @"Home";
     homeview.tabBarController.title = @"Home";

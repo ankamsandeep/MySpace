@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view.
 }
 
@@ -37,41 +38,41 @@
     [tableView reloadData];
     
     self.view = tableView;
+    
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return 6;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 50;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//   return 50;
+//}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier   forIndexPath:indexPath] ;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-  
-    NSArray *your_array = @[@"Cell1", @"Cell2", @"Cell3",
-                             @"Cell4", @"Cell5", @"Cell6"];
     
-    //cell.textLabel.text=[your_array objectAtIndex:indexPath.row];
+    NSString *titleString = [NSString stringWithFormat:@"Cell %d", indexPath.row+1];
+    cell.textLabel.text = titleString;
+    cell.imageView.image = [UIImage imageNamed:@"Status.png"];
+    
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Your custom operation
 }
-
-
 
 /*
 #pragma mark - Navigation
