@@ -10,6 +10,8 @@
 #import "RegitrationController.h"
 #import "HomeController.h"
 #import "Parse/Parse.h"
+#import "SettingsController.h"
+#import "NotificationsController.h"
 
 
 @interface ViewController ()
@@ -40,11 +42,8 @@
                                             UIAlertView *ErrorAlert = [[UIAlertView alloc]initWithTitle:@"Login Successful" message:@"Welcome to Myspace" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
                                             [ErrorAlert show];
                                             
-                                            HomeController *homeview = [[HomeController alloc] initWithNibName:@"HomeController" bundle:nil];
-                                            
-                                            [self presentViewController:homeview animated:YES completion:nil];
-                                            
-                                            
+                                            //[self presentViewController:homeview animated:YES completion:nil];
+                                            [self presentUserBoard];
                                             
                                         } else {
                                             // The login failed. Check error to see why.
@@ -56,6 +55,31 @@
                                             
                                         }
                                     }];
+    
+}
+
+-(void) presentUserBoard{
+   // HomeController *myhomeview = [[HomeController alloc] initWithNibName:HomeController bundle:nil];
+    //UINavigationController *myhomenav = [[UINavigationController alloc] initWithNibName:myhomeview bundle:nil];
+    //
+    HomeController *homeview = [[HomeController alloc] initWithNibName:@"HomeController" bundle:nil];
+    homeview.title = @"Home";
+    homeview.tabBarController.title = @"Home";
+    UINavigationController *homenavigationcontroller = [[UINavigationController alloc] initWithRootViewController:homeview];
+
+    NotificationsController *mynotificationsview = [[NotificationsController alloc] initWithNibName:@"NotificationsController" bundle:nil];
+    mynotificationsview.title = @"Notifications";
+    mynotificationsview.tabBarController.title = @"Notifications";
+    UINavigationController *notificationNavigationController = [[UINavigationController alloc] initWithRootViewController:mynotificationsview];
+    
+    SettingsController *mySettingsview = [[SettingsController alloc] initWithNibName:@"SettingsController" bundle:nil];
+    mySettingsview.title = @"Settings";
+    mySettingsview.tabBarController.title = @"Settings";
+    UINavigationController *settingsnavigationcontroller = [[UINavigationController alloc] initWithRootViewController:mySettingsview];
+    UITabBarController *tabbarcontroller = [[UITabBarController alloc] init];
+    tabbarcontroller.viewControllers = @[homenavigationcontroller,notificationNavigationController,settingsnavigationcontroller];
+    
+    [self presentViewController:tabbarcontroller animated:YES completion:nil];
     
 }
 - (IBAction)signupButtonPressed:(UIButton *)sender {
