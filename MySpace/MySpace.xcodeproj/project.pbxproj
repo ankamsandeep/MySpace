@@ -10,6 +10,7 @@
 		666B18941AF8683F0035CD80 /* MySpaceImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666B18931AF8683F0035CD80 /* MySpaceImageCell.xib */; };
 		666B18971AF869980035CD80 /* shiva.png in Resources */ = {isa = PBXBuildFile; fileRef = 666B18961AF869980035CD80 /* shiva.png */; };
 		666B189B1AF86A6E0035CD80 /* MySpaceImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B189A1AF86A6E0035CD80 /* MySpaceImageCell.m */; };
+		666B189F1AF87B570035CD80 /* MySpaceDataRequestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B189E1AF87B570035CD80 /* MySpaceDataRequestor.m */; };
 		668654CB1AF67BC6008F2CC2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668654CA1AF67BC6008F2CC2 /* HomeViewController.m */; };
 		668654CE1AF67BD1008F2CC2 /* NotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668654CD1AF67BD1008F2CC2 /* NotificationsViewController.m */; };
 		668654D11AF67BDC008F2CC2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668654D01AF67BDC008F2CC2 /* SettingsViewController.m */; };
@@ -46,6 +47,8 @@
 		666B18961AF869980035CD80 /* shiva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shiva.png; sourceTree = "<group>"; };
 		666B18991AF86A6E0035CD80 /* MySpaceImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpaceImageCell.h; sourceTree = "<group>"; };
 		666B189A1AF86A6E0035CD80 /* MySpaceImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpaceImageCell.m; sourceTree = "<group>"; };
+		666B189D1AF87B570035CD80 /* MySpaceDataRequestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpaceDataRequestor.h; sourceTree = "<group>"; };
+		666B189E1AF87B570035CD80 /* MySpaceDataRequestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpaceDataRequestor.m; sourceTree = "<group>"; };
 		668654C91AF67BC6008F2CC2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		668654CA1AF67BC6008F2CC2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		668654CC1AF67BD1008F2CC2 /* NotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsViewController.h; sourceTree = "<group>"; };
@@ -129,6 +132,15 @@
 				666B189A1AF86A6E0035CD80 /* MySpaceImageCell.m */,
 			);
 			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		666B189C1AF87B160035CD80 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				666B189D1AF87B570035CD80 /* MySpaceDataRequestor.h */,
+				666B189E1AF87B570035CD80 /* MySpaceDataRequestor.m */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		668F07851AF49314004B38D6 /* AppDelegate */ = {
@@ -240,6 +252,7 @@
 		66FBF9271AED3E6B00883DD2 /* MySpace */ = {
 			isa = PBXGroup;
 			children = (
+				666B189C1AF87B160035CD80 /* Networking */,
 				666B18981AF86A4B0035CD80 /* TableViewCell */,
 				668F07851AF49314004B38D6 /* AppDelegate */,
 				668F07A51AF525F8004B38D6 /* Frameworks */,
@@ -434,6 +447,7 @@
 				666B189B1AF86A6E0035CD80 /* MySpaceImageCell.m in Sources */,
 				668BF2E71AEF36F200268C16 /* LoginInViewController.m in Sources */,
 				668654CB1AF67BC6008F2CC2 /* HomeViewController.m in Sources */,
+				666B189F1AF87B570035CD80 /* MySpaceDataRequestor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
