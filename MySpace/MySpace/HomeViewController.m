@@ -7,10 +7,19 @@
 //
 
 #import "HomeViewController.h"
+#import "MySpaceImageCell.h"
 
 @implementation HomeViewController
 
-static NSString *const cellIdentifier = @"Cell";
+static NSString *const cellIdentifier = @"ImageCell";
+
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    
+    UINib *cellNib = [UINib nibWithNibName:@"MySpaceImageCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:cellIdentifier];
+}
 
 #pragma mark - UITableViewDataSource
 
@@ -21,11 +30,18 @@ static NSString *const cellIdentifier = @"Cell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    NSString *titleString = [NSString stringWithFormat:@"Cell %ld", indexPath.row + 1];
-    cell.textLabel.text = titleString;
+    MySpaceImageCell *cell = (MySpaceImageCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    [cell configureCellForIndexPath:indexPath];
+    
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 78.0;
 }
 
 @end

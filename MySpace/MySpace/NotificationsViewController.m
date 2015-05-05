@@ -7,26 +7,43 @@
 //
 
 #import "NotificationsViewController.h"
-
-@interface NotificationsViewController ()
-
-@end
+#import "MySpaceImageCell.h"
 
 @implementation NotificationsViewController
 
+static NSString *const cellIdentifier = @"ImageCell";
+
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UINib *cellNib = [UINib nibWithNibName:@"MySpaceImageCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:cellIdentifier];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 6;
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    MySpaceImageCell *cell = (MySpaceImageCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    [cell configureCellForIndexPath:indexPath];
+    
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 78.0;
+}
+
 
 @end
