@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "RegistrationViewController.h"
-
+#import <Parse/Parse.h>
+#import "HomeViewController.h"
+#import "NotificationsViewController.h"
+#import "SettingsViewController.h"
 @interface LoginInViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
