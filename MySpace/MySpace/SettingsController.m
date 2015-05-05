@@ -6,7 +6,9 @@
 //  Copyright (c) 2015 SandeepAnkam. All rights reserved.
 //
 
+#import "ViewController.h"
 #import "SettingsController.h"
+#import "Parse/Parse.h"
 
 @interface SettingsController ()
 
@@ -35,5 +37,11 @@
 */
 
 - (IBAction)SettingsSignoutButton:(UIButton *)sender {
+    
+   // [PFUser logOut];
+    
+    //ViewController *viewcontroller1 = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    //[self presentViewController:viewcontroller1 animated:YES completion:nil];
+    
 }
 @end
