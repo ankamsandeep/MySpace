@@ -14,45 +14,41 @@
 
 @implementation NotificationsController
 
+static NSString *const cellIdentifier1 = @"ImageCell";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UINib *cellNib = [UINib nibWithNibName:@"MySpaceImageCellView" bundle:nil];
+    
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:cellIdentifier1];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - UITableViewDataSource
 
-- (void)loadView
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    UITableView *tableView = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] style:UITableViewStylePlain];
-    tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    tableView.frame = CGRectMake(10,30,320,400);
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-    
-    [tableView reloadData];
-    
-    self.view = tableView;
-    
+    return 5;
 }
 
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *) tableView {
-    return 1;
-}
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 6;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 78;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier1];
+    
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    NSString *titleString = [NSString stringWithFormat:@"Cell %d", indexPath.row+1];
-    cell.textLabel.text = titleString;
-    cell.imageView.image = [UIImage imageNamed:@"Status.png"];
+    
     return cell;
 }
 /*

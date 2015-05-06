@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *HomePageTableView;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

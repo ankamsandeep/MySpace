@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationsController">
             <connections>
+                <outlet property="tableView" destination="8SE-DD-Qle" id="cx0-4W-2aB"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Ace-wC-f3d"/>
             </connections>
         </placeholder>
@@ -20,10 +21,18 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8SE-DD-Qle">
+                    <rect key="frame" x="0.0" y="64" width="320" height="428"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1Hl-ST-wQP"/>
+                        <outlet property="delegate" destination="-1" id="BFP-aT-gad"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="0.2113769707" green="0.95382318769999996" blue="0.67081639780000002" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="203" y="292"/>
+            <point key="canvasLocation" x="-26" y="536"/>
         </view>
     </objects>
 </document>
