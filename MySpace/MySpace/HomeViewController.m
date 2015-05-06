@@ -12,11 +12,8 @@
 #import "MySpaceAudioBook.h"
 
 @interface HomeViewController()
-
 @property (strong, nonatomic) MySpaceDataRequestor *requestor;
-
 @property (strong, nonatomic) NSArray *tableViewItems;
-
 @end
 
 static NSString *const cellIdentifier = @"ImageCell";

@@ -21,7 +21,6 @@
     self.subTitleLabel.text = subtitleFromIndexPath;
 }
 
-
 - (void)configureCellWithAudioBook:(MySpaceAudioBook *)audioBook {
     
     self.titleLabel.text = audioBook.title;
