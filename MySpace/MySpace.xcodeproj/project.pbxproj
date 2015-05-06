@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		664903921AF9C753000A8373 /* MySpaceAudioBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 664903911AF9C753000A8373 /* MySpaceAudioBook.m */; };
 		666B18941AF8683F0035CD80 /* MySpaceImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666B18931AF8683F0035CD80 /* MySpaceImageCell.xib */; };
 		666B18971AF869980035CD80 /* shiva.png in Resources */ = {isa = PBXBuildFile; fileRef = 666B18961AF869980035CD80 /* shiva.png */; };
 		666B189B1AF86A6E0035CD80 /* MySpaceImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B189A1AF86A6E0035CD80 /* MySpaceImageCell.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		1DBE2F69A0EB8B16C9893303 /* Pods-MySpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySpace/Pods-MySpace.release.xcconfig"; sourceTree = "<group>"; };
 		50EBA4366C20CE9EDDCF4B95 /* Pods-MySpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySpace/Pods-MySpace.debug.xcconfig"; sourceTree = "<group>"; };
+		664903901AF9C753000A8373 /* MySpaceAudioBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpaceAudioBook.h; sourceTree = "<group>"; };
+		664903911AF9C753000A8373 /* MySpaceAudioBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpaceAudioBook.m; sourceTree = "<group>"; };
 		666B18931AF8683F0035CD80 /* MySpaceImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySpaceImageCell.xib; sourceTree = "<group>"; };
 		666B18961AF869980035CD80 /* shiva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shiva.png; sourceTree = "<group>"; };
 		666B18991AF86A6E0035CD80 /* MySpaceImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpaceImageCell.h; sourceTree = "<group>"; };
@@ -115,6 +118,15 @@
 				1DBE2F69A0EB8B16C9893303 /* Pods-MySpace.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6649038F1AF9C73A000A8373 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				664903901AF9C753000A8373 /* MySpaceAudioBook.h */,
+				664903911AF9C753000A8373 /* MySpaceAudioBook.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		666B18951AF869900035CD80 /* Images */ = {
@@ -252,6 +264,7 @@
 		66FBF9271AED3E6B00883DD2 /* MySpace */ = {
 			isa = PBXGroup;
 			children = (
+				6649038F1AF9C73A000A8373 /* Models */,
 				666B189C1AF87B160035CD80 /* Networking */,
 				666B18981AF86A4B0035CD80 /* TableViewCell */,
 				668F07851AF49314004B38D6 /* AppDelegate */,
@@ -438,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664903921AF9C753000A8373 /* MySpaceAudioBook.m in Sources */,
 				66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */,
 				66FBF92B1AED3E6B00883DD2 /* main.m in Sources */,
 				668F07A81AF528F5004B38D6 /* RegistrationViewController.m in Sources */,

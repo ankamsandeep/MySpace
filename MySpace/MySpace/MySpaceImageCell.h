@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MySpaceAudioBook.h"
 
 @interface MySpaceImageCell : UITableViewCell
 
@@ -16,5 +17,7 @@
 
 
 - (void)configureCellForIndexPath:(NSIndexPath *)indexPath;
+
+- (void)configureCellWithAudioBook:(MySpaceAudioBook *)audioBook;
 
 @end

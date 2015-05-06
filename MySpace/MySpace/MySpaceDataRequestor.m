@@ -7,6 +7,7 @@
 //
 
 #import "MySpaceDataRequestor.h"
+#import "MySpaceAudioBook.h"
 
 @implementation MySpaceDataRequestor
 
@@ -34,11 +35,23 @@
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
 
-        // __strong typeof(weakSelf) strongSelf = weakSelf;
+        __strong typeof(weakSelf) strongSelf = weakSelf;
         
-        NSLog(@"%@", responseObject);
-        success(@[]);
+        NSDictionary *responseDictionary = (NSDictionary *)responseObject;
         
+        NSString *imageURLString = responseDictionary[@"feed"][@"icon"][@"label"];
+        NSArray *entryArray = responseDictionary[@"feed"][@"entry"];
+        NSMutableArray *audioBooks = [[NSMutableArray alloc] init];
+        
+        for (NSDictionary *dictionary in entryArray) {
+            
+            NSString *titleString = dictionary[@"im:name"][@"label"];
+            NSString *subtitleString = dictionary[@"im:artist"][@"label"];
+            MySpaceAudioBook *book = [[MySpaceAudioBook alloc] initWithTitle:titleString autohr:subtitleString imageURL:imageURLString];
+            [audioBooks addObject:book];
+        }
+        
+        success(audioBooks);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
         NSLog(@"%@", error);

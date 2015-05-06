@@ -9,16 +9,19 @@
 #import "HomeViewController.h"
 #import "MySpaceImageCell.h"
 #import "MySpaceDataRequestor.h"
+#import "MySpaceAudioBook.h"
 
 @interface HomeViewController()
 
 @property (strong, nonatomic) MySpaceDataRequestor *requestor;
 
+@property (strong, nonatomic) NSArray *tableViewItems;
+
 @end
 
-@implementation HomeViewController
-
 static NSString *const cellIdentifier = @"ImageCell";
+
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     
@@ -36,9 +39,15 @@ static NSString *const cellIdentifier = @"ImageCell";
     
     self.requestor = [[MySpaceDataRequestor alloc] init];
     
-    [self.requestor getStreamsFromURLString:urlString success:^(NSArray *stream){
+    [self.requestor getStreamsFromURLString:urlString success:^(NSArray *audioBooks){
+        
+        self.tableViewItems = audioBooks;
+        [self.tableView reloadData];
         
     }failure:^(NSError *error){
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Error in loading audio books" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alertView show];
     }];
 }
 
@@ -46,15 +55,18 @@ static NSString *const cellIdentifier = @"ImageCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 6;
+    return [self.tableViewItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     MySpaceImageCell *cell = (MySpaceImageCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    [cell configureCellForIndexPath:indexPath];
+    MySpaceAudioBook *audioBook = self.tableViewItems[indexPath.row];
     
+    if (audioBook) {
+        [cell configureCellWithAudioBook:audioBook];
+    }
     return cell;
 }
 
