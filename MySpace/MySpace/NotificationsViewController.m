@@ -34,4 +34,22 @@
 }
 */
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 6;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *myIdentifier = @"MyCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:myIdentifier];
+    
+    cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:myIdentifier];
+    cell.textLabel.text = [NSString stringWithFormat:@"cell %ld",(long)indexPath.row];
+    
+    return cell;
+    
+}
+
 @end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C53FA291AF92FB5006D15D5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53FA281AF92FB5006D15D5 /* HomeViewController.m */; };
+		3C53FA2C1AF92FCB006D15D5 /* NotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53FA2B1AF92FCB006D15D5 /* NotificationsViewController.m */; };
+		3C53FA2F1AF92FE0006D15D5 /* SignoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53FA2E1AF92FE0006D15D5 /* SignoutViewController.m */; };
+		3C53FA311AF984A9006D15D5 /* MySpaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C53FA301AF984A9006D15D5 /* MySpaceTableViewCell.xib */; };
+		3C53FA341AF984ED006D15D5 /* MySpaceTableViewCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53FA331AF984ED006D15D5 /* MySpaceTableViewCellViewController.m */; };
 		668BF2E71AEF36F200268C16 /* LoginInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668BF2E61AEF36F200268C16 /* LoginInViewController.m */; };
 		668BF2E91AEF370F00268C16 /* LoginInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668BF2E81AEF370F00268C16 /* LoginInViewController.xib */; };
 		668F07461AF4795E004B38D6 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F07451AF4795E004B38D6 /* RegistrationViewController.xib */; };
@@ -46,6 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C53FA271AF92FB5006D15D5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3C53FA281AF92FB5006D15D5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3C53FA2A1AF92FCB006D15D5 /* NotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsViewController.h; sourceTree = "<group>"; };
+		3C53FA2B1AF92FCB006D15D5 /* NotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsViewController.m; sourceTree = "<group>"; };
+		3C53FA2D1AF92FE0006D15D5 /* SignoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignoutViewController.h; sourceTree = "<group>"; };
+		3C53FA2E1AF92FE0006D15D5 /* SignoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignoutViewController.m; sourceTree = "<group>"; };
+		3C53FA301AF984A9006D15D5 /* MySpaceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySpaceTableViewCell.xib; sourceTree = "<group>"; };
+		3C53FA321AF984ED006D15D5 /* MySpaceTableViewCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpaceTableViewCellViewController.h; sourceTree = "<group>"; };
+		3C53FA331AF984ED006D15D5 /* MySpaceTableViewCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpaceTableViewCellViewController.m; sourceTree = "<group>"; };
 		668BF2E51AEF36F200268C16 /* LoginInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInViewController.h; sourceTree = "<group>"; };
 		668BF2E61AEF36F200268C16 /* LoginInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInViewController.m; sourceTree = "<group>"; };
 		668BF2E81AEF370F00268C16 /* LoginInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginInViewController.xib; path = ../LoginInViewController.xib; sourceTree = "<group>"; };
@@ -54,7 +68,7 @@
 		668F07491AF47C08004B38D6 /* NotificationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
 		668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingoutViewController.xib; sourceTree = "<group>"; };
 		668F078B1AF52532004B38D6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = MySpace/Bolts.framework; sourceTree = "<group>"; };
-		668F078C1AF52532004B38D6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = MySpace/Parse.framework; sourceTree = "<group>"; };
+		668F078C1AF52532004B38D6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		668F078F1AF52593004B38D6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		668F07911AF52599004B38D6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		668F07931AF5259F004B38D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,8 +150,16 @@
 			children = (
 				668BF2E51AEF36F200268C16 /* LoginInViewController.h */,
 				668BF2E61AEF36F200268C16 /* LoginInViewController.m */,
+				3C53FA271AF92FB5006D15D5 /* HomeViewController.h */,
+				3C53FA281AF92FB5006D15D5 /* HomeViewController.m */,
+				3C53FA2A1AF92FCB006D15D5 /* NotificationsViewController.h */,
+				3C53FA2B1AF92FCB006D15D5 /* NotificationsViewController.m */,
+				3C53FA2D1AF92FE0006D15D5 /* SignoutViewController.h */,
+				3C53FA2E1AF92FE0006D15D5 /* SignoutViewController.m */,
 				668F07A61AF528F5004B38D6 /* RegistrationViewController.h */,
 				668F07A71AF528F5004B38D6 /* RegistrationViewController.m */,
+				3C53FA321AF984ED006D15D5 /* MySpaceTableViewCellViewController.h */,
+				3C53FA331AF984ED006D15D5 /* MySpaceTableViewCellViewController.m */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -149,6 +171,7 @@
 				668F07451AF4795E004B38D6 /* RegistrationViewController.xib */,
 				668F07471AF47BC6004B38D6 /* HomeViewController.xib */,
 				668F07491AF47C08004B38D6 /* NotificationsViewController.xib */,
+				3C53FA301AF984A9006D15D5 /* MySpaceTableViewCell.xib */,
 				668F074B1AF47C1E004B38D6 /* SingoutViewController.xib */,
 				66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */,
 			);
@@ -175,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				668F078B1AF52532004B38D6 /* Bolts.framework */,
-				668F078C1AF52532004B38D6 /* Parse.framework */,
 				668F07A31AF525E4004B38D6 /* libsqlite3.dylib */,
 				668F07A11AF525D8004B38D6 /* libz.dylib */,
 				668F079F1AF525CF004B38D6 /* SystemConfiguration.framework */,
@@ -213,6 +235,7 @@
 		66FBF9271AED3E6B00883DD2 /* MySpace */ = {
 			isa = PBXGroup;
 			children = (
+				668F078C1AF52532004B38D6 /* Parse.framework */,
 				668F07851AF49314004B38D6 /* AppDelegate */,
 				668F07A51AF525F8004B38D6 /* Frameworks */,
 				668F07861AF49321004B38D6 /* ResourcesBundle */,
@@ -334,6 +357,7 @@
 				668F07481AF47BC6004B38D6 /* HomeViewController.xib in Resources */,
 				668F074A1AF47C08004B38D6 /* NotificationsViewController.xib in Resources */,
 				668F07461AF4795E004B38D6 /* RegistrationViewController.xib in Resources */,
+				3C53FA311AF984A9006D15D5 /* MySpaceTableViewCell.xib in Resources */,
 				66FBF9391AED3E6B00883DD2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,9 +378,13 @@
 			files = (
 				66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */,
 				66FBF92B1AED3E6B00883DD2 /* main.m in Sources */,
+				3C53FA2F1AF92FE0006D15D5 /* SignoutViewController.m in Sources */,
+				3C53FA341AF984ED006D15D5 /* MySpaceTableViewCellViewController.m in Sources */,
 				668F07A81AF528F5004B38D6 /* RegistrationViewController.m in Sources */,
+				3C53FA2C1AF92FCB006D15D5 /* NotificationsViewController.m in Sources */,
 				66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */,
 				668BF2E71AEF36F200268C16 /* LoginInViewController.m in Sources */,
+				3C53FA291AF92FB5006D15D5 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

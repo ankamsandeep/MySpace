@@ -24,7 +24,8 @@
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
             
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Registration Successful!!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Registration Successful!!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:@"Login", nil];
+            
             [alertView show];
             
             // write code to show Home screen.

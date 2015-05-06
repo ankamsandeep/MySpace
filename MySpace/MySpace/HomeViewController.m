@@ -7,6 +7,9 @@
 //
 
 #import "HomeViewController.h"
+#import "NotificationsViewController.h"
+#import "SignoutViewController.h"
+#import "RegistrationViewController.h"
 
 @interface HomeViewController ()
 
@@ -17,9 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+        
 }
 
 - (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -33,5 +38,47 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 6;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *myIdentifier = @"MyCell";
+   
+   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:myIdentifier];
+
+   cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:myIdentifier];
+    cell.textLabel.text = [NSString stringWithFormat:@"cell %ld",(long)indexPath.row];
+
+    
+    
+    return cell;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end
