@@ -1,0 +1,12 @@
+platform :ios, '7.0'
+
+target 'MySpace' do
+
+pod 'AFNetworking', '~> 2.5'
+pod 'Parse', '~> 1.7'
+end
+
+target 'MySpaceTests' do
+
+end
+
