@@ -7,6 +7,7 @@
 //
 
 #import "SettingsViewController.h"
+#import <Parse/Parse.h>
 
 @interface SettingsViewController ()
 
@@ -15,18 +16,37 @@
 @implementation SettingsViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self displayUserDetails];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Instance Methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)displayUserDetails {
+    
+    NSString *currentUsername = [[NSUserDefaults standardUserDefaults] valueForKey:@"username"];
+    
+    PFQuery *query = [PFUser query];
+    [query whereKey:@"username" equalTo:currentUsername];
+    NSArray *results = [query findObjects];
+    
+    PFUser *user = [results firstObject];
+    
+    self.firstNameLabel.text = [user valueForKey:@"FirstName"];
+    self.lastNameLabel.text = [user valueForKey:@"LastName"];
+    
+    self.usernameLabel.text = user.username;
+    self.emailLabel.text = user.email;
 }
-*/
 
+#pragma mark - Actions
+
+- (IBAction)signoutButtonPressed:(id)sender {
+    
+    [PFUser logOutInBackground];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

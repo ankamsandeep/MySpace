@@ -7,6 +7,7 @@
 //
 
 #import "LoginInViewController.h"
+#import "MySpaceForgotPasswordViewController.h"
 #import "RegistrationViewController.h"
 
 #import "HomeViewController.h"
@@ -28,7 +29,13 @@
                                     block:^(PFUser *user, NSError *error) {
                                         
                                         if (user) {
-                                            // Do stuff after successful login.
+                                            
+                                            // Saving username in NSUserDefaults for future use.
+                                            [[NSUserDefaults standardUserDefaults] setObject:self.userNameTextField.text forKey:@"username"];
+                                            
+                                            // clear the values to sign in again after signout
+                                            self.userNameTextField.text = @"";
+                                            self.passwordTextField.text = @"";
                                             
                                             [self presentUserDashboard];
                                             
@@ -48,6 +55,11 @@
 
 - (IBAction)forgotPasswordButtonPressed:(id)sender {
     
+    MySpaceForgotPasswordViewController *forgotPasswordVC = [[MySpaceForgotPasswordViewController alloc] initWithNibName:@"MySpaceForgotPasswordView" bundle:nil];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:forgotPasswordVC];
+    
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 #pragma mark - Private Actions

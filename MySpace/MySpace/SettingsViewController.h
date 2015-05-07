@@ -10,4 +10,15 @@
 
 @interface SettingsViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
+
+- (IBAction)signoutButtonPressed:(id)sender;
+
 @end
