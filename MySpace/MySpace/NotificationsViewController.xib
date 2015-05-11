@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationsViewController">
             <connections>
+                <outlet property="tableView" destination="LPm-Nb-lKm" id="9Li-ZH-Kub"/>
                 <outlet property="view" destination="iN0-l3-epB" id="kaj-5i-wCj"/>
             </connections>
         </placeholder>

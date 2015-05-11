@@ -7,86 +7,78 @@
 //
 
 #import "NotificationsViewController.h"
+#import "TableViewCell.h"
+#import "MySpaceAudioBook.h"
+#import "MySpaceDataRequestor.h"
 
 @interface NotificationsViewController ()
-{
-    NSMutableArray *mutArray;
-    NSMutableArray *mutArray2;
-    NSMutableArray *mutArray3;
-    }
+
+@property(nonatomic,strong) MySpaceDataRequestor *dataRequest;
+@property(nonatomic,strong) NSArray *tableViewItems;
+
 @end
 
 @implementation NotificationsViewController
 
+static NSString *CellIdentifier = @"ImageCell";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UINib *cellNib = [UINib nibWithNibName:@"TableViewCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:CellIdentifier];
+    
+    [self requestJSONFromUrl:@"https://itunes.apple.com/us/rss/topaudiobooks/limit=10/json"];
+    
 }
+
+#pragma mark -PrivateMethods
+
+-(void)requestJSONFromUrl:(NSString *)urlString
+{
+    
+    self.dataRequest = [[MySpaceDataRequestor alloc]init];
+    
+    [self.dataRequest getStreamsFromURLString:urlString success:^(NSArray *booksArray) {
+        
+        self.tableViewItems = booksArray;
+        [self.tableView reloadData];
+        
+    } failure:^(NSError *error) {
+        
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Error" message:@"Error in Loading booksArraay" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [alertView show];
+    }];
+}
+
+#pragma mark - UITableViewDelegate
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 90;
+}
+
+#pragma mark - UITableViewDatasource
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return [self.tableViewItems count];
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 90;
-}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView
-                             dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]
-                initWithStyle:UITableViewCellStyleSubtitle
-                reuseIdentifier:CellIdentifier];
+    TableViewCell *cell = (TableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    MySpaceAudioBook *audioBooks = self.tableViewItems[indexPath.row];
+    if (audioBooks) {
+        [cell configureCellWithAudioBook:audioBooks];
     }
-    
-    
-    
-    
-    mutArray = [[NSMutableArray alloc]initWithObjects:@"India",@"U.S.A",@"Australia",@"England",@"Canada",@"China", nil];
-    mutArray2=[[NSMutableArray alloc]initWithObjects:@"New Delhi",@"Washington, D.C.",@"Canberra",@"London",@"Ottawa",@"Beijing", nil];
-    mutArray3=[[NSMutableArray alloc]initWithObjects:[UIImage imageNamed:@"indiaIcon.jpg"],[UIImage imageNamed:@"USAicon1.png"],[UIImage imageNamed:@"Australiaicon1.png"],[UIImage imageNamed:@"englandIcon1.png"],[UIImage imageNamed:@"canadaIcon1.png"],[UIImage imageNamed:@"Chinaicon.1.png"], nil];
-   
-    
-   
-    cell.imageView.image=[mutArray3 objectAtIndex:indexPath.row];
-    
-    UILabel *lable1 = [[UILabel alloc]initWithFrame:CGRectMake(110, 30, 100, 20)];
-   
-    lable1.text=[mutArray objectAtIndex:indexPath.row];
-    [cell.contentView addSubview:lable1];
-    UILabel *lable2 = [[UILabel alloc]initWithFrame:CGRectMake(110, 50, 150, 20)];
-    
-    
-     lable2.text=[mutArray2 objectAtIndex:indexPath.row];
-    [cell.contentView addSubview:lable2];
-    
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
-    return cell;
+       return cell;
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

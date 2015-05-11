@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController<UITableViewDataSource,UITabBarDelegate>
-//@property(nonatomic,strong) IBOutlet UITableView *tableView;
+@interface HomeViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property(nonatomic,strong) IBOutlet UITableView *tableView;
+
+@property(nonatomic,strong)NSArray *tableViewItems;
 
 @end

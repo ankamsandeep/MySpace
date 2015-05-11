@@ -16,6 +16,7 @@
     [textField resignFirstResponder];
     return YES;
 }
+#pragma mark - ActionMethods
 
 - (IBAction)registerNowPressed:(id)sender {
     

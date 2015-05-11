@@ -12,12 +12,16 @@
 #import "HomeViewController.h"
 #import "NotificationsViewController.h"
 #import "SettingsViewController.h"
+#import "ForgetPasswordViewController.h"
+
+
 @interface LoginInViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 @property(nonatomic,strong) RegistrationViewController *registrationController;
+@property(nonatomic,strong) ForgetPasswordViewController *forgetPassword;
 
 - (IBAction)signInButtonPressed:(id)sender;
 - (IBAction)signUpButtonPressed:(id)sender;

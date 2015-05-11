@@ -9,6 +9,7 @@
 #import "LoginInViewController.h"
 
 
+
 @implementation LoginInViewController
 
 #pragma mark - Actions
@@ -17,6 +18,10 @@
     [PFUser logInWithUsernameInBackground:self.userNameTextField.text password:self.passwordTextField.text
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
+                                            self.userNameTextField.text=@"";
+                                            self.passwordTextField.text=@"";
+                                            
+//                                            [[NSUserDefaults standardUserDefaults] setObject:self.userNameTextField.text forKey:@"username"];
                                             
                                             [self createDashBoard];
                                             
@@ -62,14 +67,15 @@
     [self presentViewController:self.registrationController animated:YES completion:^{
         
     }];
-    
-
-}
+ }
 
 
 - (IBAction)forgotPasswordButtonPressed:(id)sender {
-    
-}
+    self.forgetPassword = [[ForgetPasswordViewController alloc]initWithNibName:@"ForgetPasswordViewController" bundle:nil];
+    [self presentViewController:self.forgetPassword animated:YES completion:^{
+        
+    }];
+    }
 
 
 #pragma mark - Private Actions

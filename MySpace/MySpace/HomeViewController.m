@@ -7,79 +7,80 @@
 //
 
 #import "HomeViewController.h"
+#import "MySpaceDataRequestor.h"
+#import "MySpaceAudioBook.h"
+#import "TableViewCell.h"
 
 @interface HomeViewController ()
-{
-    NSMutableArray *mutableArray;
-    NSMutableArray *mutableArray2;
-    
 
-
-}
+@property(nonatomic,strong) MySpaceDataRequestor *dataRequest;
 
 @end
 
 @implementation HomeViewController
 
+static NSString *const CellIdentifier = @"ImageCell";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UINib *cellNib = [UINib nibWithNibName:@"TableViewCell" bundle:nil];
+    [self.tableView registerNib:cellNib forCellReuseIdentifier:CellIdentifier];
+    
+    [self requestJSONFromUrl:@"https://itunes.apple.com/us/rss/topaudiobooks/limit=10/json"];
+    
 }
+
+#pragma mark -PrivateMethods
+
+-(void)requestJSONFromUrl:(NSString *)urlString
+{
+
+    self.dataRequest = [[MySpaceDataRequestor alloc]init];
+    
+    [self.dataRequest getStreamsFromURLString:urlString success:^(NSArray *booksArray) {
+        
+        self.tableViewItems = booksArray;
+        [self.tableView reloadData];
+        
+    } failure:^(NSError *error) {
+        
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Error" message:@"Error in Loading booksArraay" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        [alertView show];
+
+    }];
+}
+
+#pragma mark - UITableViewDelegate
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 90;
+}
+
+
+#pragma mark - UITableViewDatasource
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
-}
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 90;
+    return [self.tableViewItems count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView
+    
+    TableViewCell *cell = (TableViewCell *)[tableView
                              dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]
-                initWithStyle:UITableViewCellStyleSubtitle
-                reuseIdentifier:CellIdentifier];
+    MySpaceAudioBook *audioBooks = self.tableViewItems[indexPath.row];
+    
+    if (audioBooks) {
+        [cell configureCellWithAudioBook:audioBooks];
     }
-    
-    
-   
-    
-    cell.imageView.image=[UIImage imageNamed:@"Pic.jpg"];
-    UILabel *lable1 = [[UILabel alloc]initWithFrame:CGRectMake(110, 30, 100, 20)];
-    lable1.text=@"Country";
-    [cell.contentView addSubview:lable1];
-    
-    UILabel *lable2 = [[UILabel alloc]initWithFrame:CGRectMake(110, 50, 150, 20)];
-    lable2.text=@"Capital";
-    [cell.contentView addSubview:lable2];
-
-    
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

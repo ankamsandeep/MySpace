@@ -7,6 +7,7 @@
 //
 
 #import "SettingsViewController.h"
+#import <Parse/Parse.h>
 
 @interface SettingsViewController ()
 
@@ -16,22 +17,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+       [self displayUSerDetails];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - DataRetrivalMethod
+
+-(void)displayUSerDetails
+{
+    NSString *currentUserName = [[NSUserDefaults standardUserDefaults]valueForKey:@"username"];
+    
+    PFQuery *query = [PFUser query];
+    [query whereKey:@"username" equalTo:currentUserName];
+    NSArray *results = [query findObjects];
+    
+    PFUser *user = [results firstObject];
+    
+    self.firstNameLabel.text = [user valueForKey:@"FirstName"];
+    self.lastNameLabel.text = [user valueForKey:@"LastName"];
+    self.usernameLabel.text = user.username;
+    self.emailLabel.text = user.email;
+   
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - ActionMethods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(IBAction)pressedSignOutButtton:(id)sender
+{
+    [PFUser logOutInBackground];
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+
 }
-*/
-
 @end
