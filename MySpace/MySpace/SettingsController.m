@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self displayUserDetails];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,12 +37,33 @@
 }
 */
 
+#pragma mark - Instance Methods
+
+- (void)displayUserDetails {
+    
+    NSString *currentUsername = [[NSUserDefaults standardUserDefaults] valueForKey:@"username"];
+    
+    PFQuery *query = [PFUser query];
+    [query whereKey:@"username" equalTo:currentUsername];
+    NSArray *results = [query findObjects];
+    
+    PFUser *user = [results firstObject];
+    
+    self.SettingsFirstNameLabel.text = [user valueForKey:@"FirstName"];
+    self.SettingsLastNameLabel.text = [user valueForKey:@"LastName"];
+    
+    self.SettingsUserNameLabel.text = user.username;
+    self.SettingsEmailLabel.text = user.email;
+}
+
+
+
 - (IBAction)SettingsSignoutButton:(UIButton *)sender {
     
-   // [PFUser logOut];
     
-    //ViewController *viewcontroller1 = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    //[self presentViewController:viewcontroller1 animated:YES completion:nil];
+    [PFUser logOutInBackground];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 @end

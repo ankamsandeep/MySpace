@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFHTTPRequestOperation.h>
 
 @interface MySpaceDataRequestor : NSObject
+
+- (void)getStreamsFromURLString:(NSString *)urlString success:(void (^)(NSArray *))success
+                        failure:(void (^)(NSError *))failure;
 
 @end

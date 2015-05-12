@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MySpaceForgotPasswordView : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+- (IBAction)submitButtonPressed:(UIButton *)sender;
 
 @end

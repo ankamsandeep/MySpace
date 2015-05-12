@@ -7,6 +7,7 @@
 //
 
 #import "MySpaceForgotPasswordView.h"
+#import <Parse/Parse.h>
 
 @interface MySpaceForgotPasswordView ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissForgotViewController:)];
+    
+    self.navigationItem.rightBarButtonItem = cancelButton;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +40,28 @@
 }
 */
 
+#pragma mark - Instance Methods
+
+- (void)dismissForgotViewController:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma  mark - Actions
+
+- (IBAction)submitButtonPressed:(UIButton *)sender {
+    NSString *email = self.emailTextField.text;
+    
+    if (!email.length > 0) {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please enter your email" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alert show];
+        
+        return;
+    }
+    
+    [PFUser requestPasswordResetForEmailInBackground:email];
+    [self dismissForgotViewController:nil];
+
+}
 @end

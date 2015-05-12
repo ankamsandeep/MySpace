@@ -12,7 +12,8 @@
 #import "Parse/Parse.h"
 #import "SettingsController.h"
 #import "NotificationsController.h"
-
+#import "MySpaceForgotPasswordView.h"
+#import <Parse/Parse.h>
 
 @interface ViewController ()
 
@@ -41,6 +42,10 @@
                                             // Do stuff after successful login.
                                             UIAlertView *ErrorAlert = [[UIAlertView alloc]initWithTitle:@"Login Successful" message:@"Welcome to Myspace" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
                                             [ErrorAlert show];
+                                            
+                                            // clear the values to sign in again after signout
+                                            self.UserName.text = @"";
+                                            self.Password.text = @"";
                                             
                                             //[self presentViewController:homeview animated:YES completion:nil];
                                             [self presentUserBoard];
@@ -90,5 +95,11 @@
 }
 
 - (IBAction)forgotPasswordLinkPressed:(UIButton *)sender {
+    MySpaceForgotPasswordView *forgotPasswordVC = [[MySpaceForgotPasswordView alloc] initWithNibName:@"MySpaceForgotPasswordView" bundle:nil];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:forgotPasswordVC];
+    
+    [self presentViewController:navController animated:YES completion:nil];
+    
 }
 @end

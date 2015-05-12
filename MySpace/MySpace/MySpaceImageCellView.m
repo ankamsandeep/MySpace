@@ -20,4 +20,11 @@
     
 }
 
+-(void)configureCellWithAudioBook:(MySpaceAudioBook *)audioBook {
+    
+    self.titleLabel.text = audioBook.title;
+    self.subTitleLabel.text = audioBook.author;
+    self.cellImage.image = audioBook.icon;
+}
+
 @end
