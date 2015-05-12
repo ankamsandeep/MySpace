@@ -42,6 +42,8 @@
                                             // Do stuff after successful login.
                                             UIAlertView *ErrorAlert = [[UIAlertView alloc]initWithTitle:@"Login Successful" message:@"Welcome to Myspace" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
                                             [ErrorAlert show];
+                                            // Saving username in NSUserDefaults for future use.
+                                            [[NSUserDefaults standardUserDefaults] setObject:self.UserName.text forKey:@"username"];
                                             
                                             // clear the values to sign in again after signout
                                             self.UserName.text = @"";
