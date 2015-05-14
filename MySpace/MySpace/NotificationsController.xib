@@ -32,7 +32,7 @@
             </subviews>
             <color key="backgroundColor" red="0.2113769707" green="0.95382318769999996" blue="0.67081639780000002" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-26" y="536"/>
+            <point key="canvasLocation" x="-63" y="60"/>
         </view>
     </objects>
 </document>

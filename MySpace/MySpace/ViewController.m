@@ -33,8 +33,8 @@
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
     
-    NSString *myusername = self.UserName.text;
-    NSString *mypassword = self.Password.text;
+    NSString *myusername = self.userName.text;
+    NSString *mypassword = self.password.text;
     
     [PFUser logInWithUsernameInBackground:myusername password:mypassword
                                     block:^(PFUser *user, NSError *error) {
@@ -43,11 +43,11 @@
                                             UIAlertView *ErrorAlert = [[UIAlertView alloc]initWithTitle:@"Login Successful" message:@"Welcome to Myspace" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
                                             [ErrorAlert show];
                                             // Saving username in NSUserDefaults for future use.
-                                            [[NSUserDefaults standardUserDefaults] setObject:self.UserName.text forKey:@"username"];
+                                            [[NSUserDefaults standardUserDefaults] setObject:self.userName.text forKey:@"username"];
                                             
                                             // clear the values to sign in again after signout
-                                            self.UserName.text = @"";
-                                            self.Password.text = @"";
+                                            self.userName.text = @"";
+                                            self.password.text = @"";
                                             
                                             //[self presentViewController:homeview animated:YES completion:nil];
                                             [self presentUserBoard];

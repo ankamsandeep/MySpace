@@ -31,11 +31,9 @@
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     operation.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    __weak typeof(self) weakSelf = self;
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        __strong typeof(weakSelf) strongSelf = weakSelf;
         
         NSDictionary *responseDictionary = (NSDictionary *)responseObject;
         
