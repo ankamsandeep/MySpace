@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+- (IBAction)loginButtonPressed:(UIButton *)sender;
+- (IBAction)signupButtonPressed:(UIButton *)sender;
+- (IBAction)forgotPasswordLinkPressed:(UIButton *)sender;
 
 @end
 

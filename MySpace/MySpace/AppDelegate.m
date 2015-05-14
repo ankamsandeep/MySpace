@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  MySpace
 //
-//  Created by Sandeep Ankam on 4/26/15.
+//  Created by Kapil Dev on 4/26/15.
 //  Copyright (c) 2015 SandeepAnkam. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -15,8 +16,22 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+        self.viewController = [[ViewController alloc] initWithNibName:@"LoginScreen" bundle:nil];
+    [self.window setRootViewController:self.viewController];
+    
+    [self.window makeKeyAndVisible];
+    
+    //Parse Setup
+    
+    [Parse setApplicationId:@"bE0ti4scbHeo9rKhjZQx0f5CTziToM1c1x8LeTuh"
+                  clientKey:@"vTtWZ8kC3ue0TnBuixOuEfNbMMo0sRkFklxU0fYr"];
+    
     return YES;
 }
 

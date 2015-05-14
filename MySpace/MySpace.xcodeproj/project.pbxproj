@@ -7,11 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3F952C1B01BE4D0084B398 /* MySpaceAudioBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F952B1B01BE4D0084B398 /* MySpaceAudioBook.m */; };
+		0B3F95301B01BF260084B398 /* MySpaceDataRequestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F952F1B01BF260084B398 /* MySpaceDataRequestor.m */; };
+		0B3F95341B01C10D0084B398 /* MySpaceForgotPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3F95321B01C10D0084B398 /* MySpaceForgotPasswordView.m */; };
+		0B3F95351B01C10D0084B398 /* MySpaceForgotPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3F95331B01C10D0084B398 /* MySpaceForgotPasswordView.xib */; };
+		0B53169F1AF88D3C00D680A6 /* MySpaceImageCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B53169E1AF88D3C00D680A6 /* MySpaceImageCellView.xib */; };
+		0B5316A51AF89BBD00D680A6 /* MySpaceImageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5316A41AF89BBD00D680A6 /* MySpaceImageCellView.m */; };
+		0BFC923E1AEF2DBD00612AB8 /* Button Plain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC923D1AEF2DBD00612AB8 /* Button Plain.jpg */; };
+		0BFC92401AEF2EA100612AB8 /* LoginScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC923F1AEF2EA100612AB8 /* LoginScreen.xib */; };
+		0BFC92471AF4728F00612AB8 /* SettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC92461AF4728E00612AB8 /* SettingsController.xib */; };
+		0BFC924B1AF4767800612AB8 /* RegistrationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC924A1AF4767800612AB8 /* RegistrationController.xib */; };
+		0BFC924D1AF47ACE00612AB8 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC924C1AF47ACE00612AB8 /* HomeController.xib */; };
+		0BFC924F1AF47C1000612AB8 /* NotificationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC924E1AF47C1000612AB8 /* NotificationsController.xib */; };
+		0BFC92521AF486AD00612AB8 /* RegitrationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC92511AF486AD00612AB8 /* RegitrationController.m */; };
+		0BFC92551AF48DBC00612AB8 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC92541AF48DBC00612AB8 /* HomeController.m */; };
+		0BFC92581AF48E7500612AB8 /* NotificationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC92571AF48E7500612AB8 /* NotificationsController.m */; };
+		0BFC925B1AF48EFD00612AB8 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC925A1AF48EFD00612AB8 /* SettingsController.m */; };
+		0BFC92771AF80B2100612AB8 /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFC92761AF80B2100612AB8 /* Status.png */; };
+		4C0C9B8D0B7E9411AC327E87 /* libPods-MySpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F963A41BE3453D72876F9B76 /* libPods-MySpace.a */; };
 		66FBF92B1AED3E6B00883DD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92A1AED3E6B00883DD2 /* main.m */; };
 		66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */; };
 		66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */; };
 		66FBF9341AED3E6B00883DD2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF9331AED3E6B00883DD2 /* ViewController.m */; };
-		66FBF9371AED3E6B00883DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FBF9351AED3E6B00883DD2 /* Main.storyboard */; };
 		66FBF9391AED3E6B00883DD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FBF9381AED3E6B00883DD2 /* Images.xcassets */; };
 		66FBF93C1AED3E6B00883DD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */; };
 		66FBF9481AED3E6B00883DD2 /* MySpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FBF9471AED3E6B00883DD2 /* MySpaceTests.m */; };
@@ -28,6 +45,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B3F952A1B01BE4D0084B398 /* MySpaceAudioBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpaceAudioBook.h; sourceTree = "<group>"; };
+		0B3F952B1B01BE4D0084B398 /* MySpaceAudioBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpaceAudioBook.m; sourceTree = "<group>"; };
+		0B3F952E1B01BF260084B398 /* MySpaceDataRequestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpaceDataRequestor.h; sourceTree = "<group>"; };
+		0B3F952F1B01BF260084B398 /* MySpaceDataRequestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpaceDataRequestor.m; sourceTree = "<group>"; };
+		0B3F95311B01C10D0084B398 /* MySpaceForgotPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpaceForgotPasswordView.h; sourceTree = "<group>"; };
+		0B3F95321B01C10D0084B398 /* MySpaceForgotPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpaceForgotPasswordView.m; sourceTree = "<group>"; };
+		0B3F95331B01C10D0084B398 /* MySpaceForgotPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySpaceForgotPasswordView.xib; sourceTree = "<group>"; };
+		0B53169E1AF88D3C00D680A6 /* MySpaceImageCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySpaceImageCellView.xib; sourceTree = "<group>"; };
+		0B5316A31AF89BBD00D680A6 /* MySpaceImageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpaceImageCellView.h; sourceTree = "<group>"; };
+		0B5316A41AF89BBD00D680A6 /* MySpaceImageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpaceImageCellView.m; sourceTree = "<group>"; };
+		0BFC923D1AEF2DBD00612AB8 /* Button Plain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Button Plain.jpg"; path = "../../../Documents/Button Plain.jpg"; sourceTree = "<group>"; };
+		0BFC923F1AEF2EA100612AB8 /* LoginScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginScreen.xib; sourceTree = "<group>"; };
+		0BFC92461AF4728E00612AB8 /* SettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsController.xib; sourceTree = "<group>"; };
+		0BFC924A1AF4767800612AB8 /* RegistrationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationController.xib; sourceTree = "<group>"; };
+		0BFC924C1AF47ACE00612AB8 /* HomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		0BFC924E1AF47C1000612AB8 /* NotificationsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsController.xib; sourceTree = "<group>"; };
+		0BFC92501AF486AD00612AB8 /* RegitrationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegitrationController.h; sourceTree = "<group>"; };
+		0BFC92511AF486AD00612AB8 /* RegitrationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegitrationController.m; sourceTree = "<group>"; };
+		0BFC92531AF48DBC00612AB8 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		0BFC92541AF48DBC00612AB8 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		0BFC92561AF48E7500612AB8 /* NotificationsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsController.h; sourceTree = "<group>"; };
+		0BFC92571AF48E7500612AB8 /* NotificationsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsController.m; sourceTree = "<group>"; };
+		0BFC92591AF48EFD00612AB8 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		0BFC925A1AF48EFD00612AB8 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		0BFC925C1AF5256100612AB8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		0BFC925D1AF5256100612AB8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		0BFC92601AF525A300612AB8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0BFC92621AF525B000612AB8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0BFC92641AF525BF00612AB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0BFC92661AF525CF00612AB8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0BFC92681AF525DE00612AB8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0BFC926A1AF525EC00612AB8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0BFC926C1AF525F900612AB8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0BFC926E1AF5260D00612AB8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0BFC92701AF5261A00612AB8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0BFC92721AF5262900612AB8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0BFC92741AF5263700612AB8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0BFC92761AF80B2100612AB8 /* Status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Status.png; path = ../../../Documents/Status.png; sourceTree = "<group>"; };
+		1A97B23AF084FE01698A0686 /* Pods-MySpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySpace/Pods-MySpace.debug.xcconfig"; sourceTree = "<group>"; };
 		66FBF9251AED3E6B00883DD2 /* MySpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FBF9291AED3E6B00883DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66FBF92A1AED3E6B00883DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,12 +92,13 @@
 		66FBF9301AED3E6B00883DD2 /* MySpace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MySpace.xcdatamodel; sourceTree = "<group>"; };
 		66FBF9321AED3E6B00883DD2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		66FBF9331AED3E6B00883DD2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		66FBF9361AED3E6B00883DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66FBF9381AED3E6B00883DD2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		66FBF93B1AED3E6B00883DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		66FBF9411AED3E6B00883DD2 /* MySpaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySpaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FBF9461AED3E6B00883DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66FBF9471AED3E6B00883DD2 /* MySpaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpaceTests.m; sourceTree = "<group>"; };
+		CB7D235BC46A70D071C73F8F /* Pods-MySpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySpace/Pods-MySpace.release.xcconfig"; sourceTree = "<group>"; };
+		F963A41BE3453D72876F9B76 /* libPods-MySpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0C9B8D0B7E9411AC327E87 /* libPods-MySpace.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +120,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B3F95291B01BE120084B398 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B3F952A1B01BE4D0084B398 /* MySpaceAudioBook.h */,
+				0B3F952B1B01BE4D0084B398 /* MySpaceAudioBook.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0B3F952D1B01BF000084B398 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0B3F952E1B01BF260084B398 /* MySpaceDataRequestor.h */,
+				0B3F952F1B01BF260084B398 /* MySpaceDataRequestor.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		0B53169D1AF88CB700D680A6 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC923F1AEF2EA100612AB8 /* LoginScreen.xib */,
+				0BFC924C1AF47ACE00612AB8 /* HomeController.xib */,
+				0BFC924A1AF4767800612AB8 /* RegistrationController.xib */,
+				0BFC924E1AF47C1000612AB8 /* NotificationsController.xib */,
+				0BFC92461AF4728E00612AB8 /* SettingsController.xib */,
+				66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */,
+				0B53169E1AF88D3C00D680A6 /* MySpaceImageCellView.xib */,
+				0B3F95331B01C10D0084B398 /* MySpaceForgotPasswordView.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		0B5316A11AF88E4100D680A6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC92761AF80B2100612AB8 /* Status.png */,
+				0BFC923D1AEF2DBD00612AB8 /* Button Plain.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0B5316A21AF89B4300D680A6 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0B5316A31AF89BBD00D680A6 /* MySpaceImageCellView.h */,
+				0B5316A41AF89BBD00D680A6 /* MySpaceImageCellView.m */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
 		66FBF91C1AED3E6B00883DD2 = {
 			isa = PBXGroup;
 			children = (
+				0BFC92741AF5263700612AB8 /* libsqlite3.dylib */,
+				0BFC92721AF5262900612AB8 /* libz.dylib */,
+				0BFC92701AF5261A00612AB8 /* SystemConfiguration.framework */,
+				0BFC926E1AF5260D00612AB8 /* StoreKit.framework */,
+				0BFC926C1AF525F900612AB8 /* Security.framework */,
+				0BFC926A1AF525EC00612AB8 /* QuartzCore.framework */,
+				0BFC92681AF525DE00612AB8 /* MobileCoreServices.framework */,
+				0BFC92661AF525CF00612AB8 /* CoreLocation.framework */,
+				0BFC92641AF525BF00612AB8 /* CoreGraphics.framework */,
+				0BFC92621AF525B000612AB8 /* CFNetwork.framework */,
+				0BFC92601AF525A300612AB8 /* AudioToolbox.framework */,
 				66FBF9271AED3E6B00883DD2 /* MySpace */,
 				66FBF9441AED3E6B00883DD2 /* MySpaceTests */,
 				66FBF9261AED3E6B00883DD2 /* Products */,
+				B84BF935DE36FB712F579159 /* Pods */,
+				9E08A961123929B50DDD69C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,15 +205,30 @@
 		66FBF9271AED3E6B00883DD2 /* MySpace */ = {
 			isa = PBXGroup;
 			children = (
+				0B3F952D1B01BF000084B398 /* Networking */,
+				0B3F95291B01BE120084B398 /* Models */,
+				0B5316A21AF89B4300D680A6 /* TableViewCell */,
+				0B53169D1AF88CB700D680A6 /* Xibs */,
+				0BFC925C1AF5256100612AB8 /* Bolts.framework */,
+				0BFC925D1AF5256100612AB8 /* Parse.framework */,
 				66FBF92C1AED3E6B00883DD2 /* AppDelegate.h */,
 				66FBF92D1AED3E6B00883DD2 /* AppDelegate.m */,
 				66FBF9321AED3E6B00883DD2 /* ViewController.h */,
 				66FBF9331AED3E6B00883DD2 /* ViewController.m */,
-				66FBF9351AED3E6B00883DD2 /* Main.storyboard */,
 				66FBF9381AED3E6B00883DD2 /* Images.xcassets */,
-				66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */,
 				66FBF92F1AED3E6B00883DD2 /* MySpace.xcdatamodeld */,
+				0B5316A11AF88E4100D680A6 /* Images */,
 				66FBF9281AED3E6B00883DD2 /* Supporting Files */,
+				0BFC92501AF486AD00612AB8 /* RegitrationController.h */,
+				0BFC92511AF486AD00612AB8 /* RegitrationController.m */,
+				0BFC92531AF48DBC00612AB8 /* HomeController.h */,
+				0BFC92541AF48DBC00612AB8 /* HomeController.m */,
+				0BFC92561AF48E7500612AB8 /* NotificationsController.h */,
+				0BFC92571AF48E7500612AB8 /* NotificationsController.m */,
+				0BFC92591AF48EFD00612AB8 /* SettingsController.h */,
+				0BFC925A1AF48EFD00612AB8 /* SettingsController.m */,
+				0B3F95311B01C10D0084B398 /* MySpaceForgotPasswordView.h */,
+				0B3F95321B01C10D0084B398 /* MySpaceForgotPasswordView.m */,
 			);
 			path = MySpace;
 			sourceTree = "<group>";
@@ -122,6 +259,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9E08A961123929B50DDD69C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F963A41BE3453D72876F9B76 /* libPods-MySpace.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B84BF935DE36FB712F579159 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A97B23AF084FE01698A0686 /* Pods-MySpace.debug.xcconfig */,
+				CB7D235BC46A70D071C73F8F /* Pods-MySpace.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66FBF94B1AED3E6B00883DD2 /* Build configuration list for PBXNativeTarget "MySpace" */;
 			buildPhases = (
+				E09D34ABB07B25B3AEF3002A /* Check Pods Manifest.lock */,
 				66FBF9211AED3E6B00883DD2 /* Sources */,
 				66FBF9221AED3E6B00883DD2 /* Frameworks */,
 				66FBF9231AED3E6B00883DD2 /* Resources */,
+				A4E4EC59CABC94B83B04F2A5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,9 +358,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66FBF9371AED3E6B00883DD2 /* Main.storyboard in Resources */,
 				66FBF93C1AED3E6B00883DD2 /* LaunchScreen.xib in Resources */,
+				0BFC92401AEF2EA100612AB8 /* LoginScreen.xib in Resources */,
+				0BFC924F1AF47C1000612AB8 /* NotificationsController.xib in Resources */,
+				0BFC924B1AF4767800612AB8 /* RegistrationController.xib in Resources */,
+				0BFC924D1AF47ACE00612AB8 /* HomeController.xib in Resources */,
 				66FBF9391AED3E6B00883DD2 /* Images.xcassets in Resources */,
+				0BFC92771AF80B2100612AB8 /* Status.png in Resources */,
+				0B3F95351B01C10D0084B398 /* MySpaceForgotPasswordView.xib in Resources */,
+				0B53169F1AF88D3C00D680A6 /* MySpaceImageCellView.xib in Resources */,
+				0BFC92471AF4728F00612AB8 /* SettingsController.xib in Resources */,
+				0BFC923E1AEF2DBD00612AB8 /* Button Plain.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,15 +381,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A4E4EC59CABC94B83B04F2A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MySpace/Pods-MySpace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E09D34ABB07B25B3AEF3002A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66FBF9211AED3E6B00883DD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B3F95301B01BF260084B398 /* MySpaceDataRequestor.m in Sources */,
 				66FBF92E1AED3E6B00883DD2 /* AppDelegate.m in Sources */,
+				0BFC92521AF486AD00612AB8 /* RegitrationController.m in Sources */,
+				0BFC92581AF48E7500612AB8 /* NotificationsController.m in Sources */,
+				0B5316A51AF89BBD00D680A6 /* MySpaceImageCellView.m in Sources */,
+				0B3F952C1B01BE4D0084B398 /* MySpaceAudioBook.m in Sources */,
 				66FBF92B1AED3E6B00883DD2 /* main.m in Sources */,
+				0BFC925B1AF48EFD00612AB8 /* SettingsController.m in Sources */,
 				66FBF9341AED3E6B00883DD2 /* ViewController.m in Sources */,
+				0BFC92551AF48DBC00612AB8 /* HomeController.m in Sources */,
 				66FBF9311AED3E6B00883DD2 /* MySpace.xcdatamodeld in Sources */,
+				0B3F95341B01C10D0084B398 /* MySpaceForgotPasswordView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,14 +453,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		66FBF9351AED3E6B00883DD2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				66FBF9361AED3E6B00883DD2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		66FBF93A1AED3E6B00883DD2 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,8 +544,13 @@
 		};
 		66FBF94C1AED3E6B00883DD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A97B23AF084FE01698A0686 /* Pods-MySpace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MySpace",
+				);
 				INFOPLIST_FILE = MySpace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,8 +559,13 @@
 		};
 		66FBF94D1AED3E6B00883DD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB7D235BC46A70D071C73F8F /* Pods-MySpace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MySpace",
+				);
 				INFOPLIST_FILE = MySpace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +625,7 @@
 				66FBF94D1AED3E6B00883DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66FBF94E1AED3E6B00883DD2 /* Build configuration list for PBXNativeTarget "MySpaceTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +634,7 @@
 				66FBF9501AED3E6B00883DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
