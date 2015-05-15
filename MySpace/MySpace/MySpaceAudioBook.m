@@ -17,8 +17,8 @@
         return nil;
     }
     
-    _title = title;
-    _author = author;
+   _title = title;
+   _author = author;
     
     [self downloadImageFromURL:imageURL];
     return self;
@@ -30,6 +30,5 @@
     NSData *data = [NSData dataWithContentsOfURL:url];
     self.icon = [UIImage imageWithData:data];
 }
-
 
 @end
